@@ -1,0 +1,17 @@
+# Startup Message off
+startup_message off
+# Scrollback Buffer
+defscrollback 10000
+# No vbell
+vbell off
+# Editor clean fix
+altscreen on
+# Make me login shell
+shell -$SHELL 
+
+# binds
+bind ' ' windowlist -b
+
+# Bottom Line
+hardstatus alwayslastline
+hardstatus string "%{.wk}Host: %H %{.gk} Load: %l %{.wk} %c:%s %{.bw} %n (%t) %{.wk} %W %{.wk}"
