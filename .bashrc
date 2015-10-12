@@ -5,11 +5,8 @@ if [ -f /etc/bashrc ]; then
 	. /etc/bashrc
 fi
 
-case "$TERM" in
-    screen*) PROMPT_COMMAND='/bin/echo -ne "\033k\033\0134"'
-esac
-
-# Source git-prompt
+# Source git-prompt for git-directory
+# git-prompt.sh is located in /usr/share/git/... on every system with installed git
 source ~/.git-prompt.sh
 
 # Colors
@@ -25,8 +22,6 @@ txt_wht='\[\e[1;37m\]'
 ## Reset Color
 col_off='\[\e[0m\]'
 
-#PS1="$txt_blu[\\u$txt_wht@$txt_blu\\h $txt_wht\\W$txt_blu]$txt_wht \\$ $col_off"
-
 # Helper for git-prompt
     # Configure git-prompt
     GIT_PS1_SHOWDIRTYSTATE=1
@@ -35,14 +30,6 @@ col_off='\[\e[0m\]'
     GIT_PS1_DESCRIBE_STYLE="branch"
     GIT_PS1_SHOWUPSTREAM="auto git"
     GIT_PS1_SHOWCOLORHINTS=1
-
-get_dir() {
-    printf "%s" $(pwd | sed "s:$HOME:~:")
-}
-
-get_sha() {
-    git rev-parse --short HEAD 2>/dev/null
-}
 
 # Build my prompt
 set_prompt () {
@@ -61,8 +48,7 @@ set_prompt () {
         PS1+="$txt_red$FancyX "
     fi
 
-    # If root, just print the host in red. Otherwise, print the current user
-    # and host in blue.
+    # If root, just print the host in red. Otherwise, print the current user and host in blue.
     if [[ $EUID == 0 ]]; then
         PS1+="$txt_red[\\h "
     else
