@@ -1,4 +1,10 @@
 #!/bin/bash
+# zz-custom-bash.sh
+# Please place this file in /etc/profile.d/
+#
+# Maintainer:	danielschier84<at>gmail.com
+# Comitter:	killermoehre<at>gmx.net^
+# Version: 0.3
 gawk '
 BEGIN {
 	HOSTCOMMAND="hostname -f"
