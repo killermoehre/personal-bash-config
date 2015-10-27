@@ -69,7 +69,7 @@ set_prompt_start(){
   fi
 
   # Print the working directory in white.
-  myPS1+="$txt_wht\\W$col_off"
+  myPS1+="$txt_wht\\W$col_off "
 }
 
 set_prompt_end(){
@@ -81,4 +81,4 @@ set_prompt_end(){
   fi
 }
 
-PROMPT_COMMAND='set_prompt_start; set_prompt_end; __git_ps1 "$myPS1" "$myPS1end" "( %s)"'
+PROMPT_COMMAND='set_prompt_start; set_prompt_end; __git_ps1 "$myPS1" "$myPS1end" "(%s)"'
