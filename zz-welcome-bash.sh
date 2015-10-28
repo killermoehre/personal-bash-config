@@ -26,11 +26,21 @@ function remove_whitespace () {
 function draw_full_line () {
     local -i i=0
     COLUMNS="${COLUMNS:=80}"
-    until [[ "$i" -ge "$COLUMNS" ]]; do
+    while [[ "$i" -lt "$((COLUMNS - 1))" ]]; do
         printf '-'
         i+=1
     done
     printf '\n'
+}
+
+function print_line () {
+    FTAB=19 #at which line should be the divisor between key and value
+    if [[ "${#@}" -eq 2 ]]; then
+        printf ' %-*s: %s\n' "$FTAB" "$1" "$2"
+    fi
+    if [[ "${#@}" -eq 3 ]]; then
+        printf ' %-*s: %*s\n' "$FTAB" "$1" "$2" "$3"
+    fi
 }
 
 FQDN="$(hostname -f)"
@@ -38,6 +48,9 @@ UNAME="$(uname -sr)"
 
 printf ' System summary (current time %(%H:%M:%S %d.%m.%Y)T))\n'
 draw_full_line "$COLUMNS"
+print_line 'Hostname' "$FQDN"
+print_line 'Kernel' "$UNAME"
+printf '\n'
 
 # create on the fly arrays named after the options in /proc/cpuinfo and fill
 #+them with the values from each CPU 
@@ -52,14 +65,36 @@ while IFS="	:" read -r CPU_OPTION CPU_VALUE; do
     declare "$CPU_OPTION+=( \"$CPU_VALUE\" )"
 done < /proc/cpuinfo
 
+# split the model name in model name and net speed
+declare -a FREQUENCY
+for NR_CPU in "${PROCESSOR[@]}"; do
+    IFS="@" read MODELNAME[$NR_CPU] PROCESSOR[$NR_CPU] <<< "${MODELNAME[$NR_CPU]}"
+done
+
+print_line 'CPU-Model'           "${MODELNAME[0]}"
+print_line 'CPU-Frequency (MHz)' "${CPUMHZ[*]}"
+print_line 'CPU-Cores/Threads'   "${CPUCORES[0]}/${#PROCESSOR[@]}"
+printf '\n'
+
+read -r -a LOADAVG < /proc/loadavg
+print_line 'Load (1, 5, 15)' "${LOADAVG[0]} ${LOADAVG[1]} ${LOADAVG[2]}"
+printf '\n'
+
 declare -i -A MEMINFO
+declare -i LENGTH_MEMINFO
 while IFS=":" read -r MEM_OPTION MEM_VALUE; do
     MEM_VALUE="${MEM_VALUE% kB}"
     MEMINFO["$MEM_OPTION"]="$MEM_VALUE"
+    if [[ "${#MEM_VALUE}" -gt "$LENGHT_MEMINFO" ]]; then
+        LENGTH_MEMINFO="${#MEM_VALUE}"
+    fi
 done < /proc/meminfo
 
-read -r -a LOADAVG < /proc/loadavg
-
+print_line 'Memory (free)'      "$LENGTH_MEMINFO" "${MEMINFO[MemFree]} kiB"
+print_line 'Memory (available)' "$LENGTH_MEMINFO" "${MEMINFO[MemAvailable]} kiB"
+print_line 'Memory (total)'     "$LENGTH_MEMINFO" "${MEMINFO[MemTotal]} kiB"
+print_line 'Swap   (free)'      "$LENGTH_MEMINFO" "${MEMINFO[SwapFree]} kiB"
+print_line 'Swap   (total)'     "$LENGTH_MEMINFO" "${MEMINFO[SwapTotal]} kiB"
 draw_full_line "$COLUMNS"
 #~ for OPTION in "${OPTIONS[@]}"; do
 	#~ echo "${!OPTION[@]}"
