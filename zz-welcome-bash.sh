@@ -77,7 +77,7 @@ print_line 'CPU-Cores/Threads'   "${CPUCORES[0]}/${#PROCESSOR[@]}"
 printf '\n'
 
 read -r -a LOADAVG < /proc/loadavg
-print_line 'Load (1, 5, 15)' "${LOADAVG[0]} ${LOADAVG[1]} ${LOADAVG[2]}"
+print_line 'Loadavg (1/5/15)' "${LOADAVG[0]}/${LOADAVG[1]}/${LOADAVG[2]}"
 printf '\n'
 
 declare -i -A MEMINFO
