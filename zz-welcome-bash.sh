@@ -1,68 +1,84 @@
-#!/bin/bash
+#!/bin/bash -i
 # zz-custom-bash.sh
 # Please place this file in /etc/profile.d/
 #
-# Maintainer:	danielschier84<at>gmail.com
-# Comitter:	killermoehre<at>gmx.net^
+# Maintainer: danielschier84<at>gmail.com
+# Comitter:   killermoehre<at>gmx.net^
 # Version: 0.4
 
+# make $COLUMNS available in script
+shopt -s checkwinsize
+kill -s WINCH $$
+
+# set advanced glob options
 shopt -s extglob
+
+function remove_whitespace () {
+    local INPUT="$1"
+    local INPUT2=""
+    until [ "$INPUT" = "$INPUT2" ]; do
+        INPUT2="$INPUT"
+        INPUT="${INPUT/ /}"
+    done
+    printf '%s' "$INPUT"
+}
+
+function draw_full_line () {
+    local -i i=0
+    COLUMNS="${COLUMNS:=80}"
+    until [[ "$i" -ge "$COLUMNS" ]]; do
+        printf '-'
+        i+=1
+    done
+    printf '\n'
+}
 
 FQDN="$(hostname -f)"
 UNAME="$(uname -sr)"
 
-declare -A CPUINFO MEMINFO
-declare -a LOADAVG
+printf ' System summary (current time %(%H:%M:%S %d.%m.%Y)T))\n'
+draw_full_line "$COLUMNS"
 
-#CPUINFO['processor']=1
-
-while IFS="	:" read -r OPTION VALUE; do
-	OPTION="${OPTION:=none}"
-	VALUE="${VALUE:=none}"
-	VALUE="${VALUE# }"
-	case "${OPTION}" in
-		processor)
-			printf "%i\n" "${CPUINFO[processor]}"
-			CPUINFO["$OPTION"]="$((CPUINFO[OPTION]++))"
-			continue
-			;;
-		'model name')
-			IFS="@" read -r CPUINFO["$OPTION"] CPUINFO['frequency'] <<< "$VALUE"
-			CPUINFO["$OPTION"]="${CPUINFO["$OPTION"]% }"
-			CPUINFO['frequency']="${CPUINFO['frequency']# }"
-			continue
-			;;
-		none)
-			continue
-			;;
-		*)
-			CPUINFO[$OPTION]="${VALUE}"
-			continue
-			;;
-	esac
+# create on the fly arrays named after the options in /proc/cpuinfo and fill
+#+them with the values from each CPU 
+declare -a CPU_OPTIONS
+while IFS="	:" read -r CPU_OPTION CPU_VALUE; do
+    CPU_OPTION="${CPU_OPTION^^*}"
+    CPU_OPTION="$(remove_whitespace "$CPU_OPTION")"
+    CPU_OPTIONS+=("${CPU_OPTION:=none}")
+    declare -a "$CPU_OPTION"
+    CPU_VALUE="${CPU_VALUE:=none}"
+    CPU_VALUE="${CPU_VALUE# }"
+    declare "$CPU_OPTION+=( \"$CPU_VALUE\" )"
 done < /proc/cpuinfo
 
-while IFS=":" read -r OPTION VALUE; do
-	VALUE="${VALUE% kB}"
-	declare -i MEMINFO["$OPTION"]="$VALUE"
+declare -i -A MEMINFO
+while IFS=":" read -r MEM_OPTION MEM_VALUE; do
+    MEM_VALUE="${MEM_VALUE% kB}"
+    MEMINFO["$MEM_OPTION"]="$MEM_VALUE"
 done < /proc/meminfo
 
 read -r -a LOADAVG < /proc/loadavg
 
-printf ' System summary (collected %(%H:%M:%S %d.%m.%Y)T)
----------------------------------------------------------------
- Hostname		= %s
- Kernel			= %s
+draw_full_line "$COLUMNS"
+#~ for OPTION in "${OPTIONS[@]}"; do
+	#~ echo "${!OPTION[@]}"
+#~ done
 
- CPU-Model		= %s
- CPU-Frequency		= %s
- CPU-Cores/Threads	= %i/%i
+#~ printf ' System summary (collected %(%H:%M:%S %d.%m.%Y)T)
+#~ ---------------------------------------------------------------
+ #~ Hostname       = %s
+ #~ Kernel         = %s
 
- Load (1, 5, 15)	= %s %s %s
+ #~ CPU-Model      = %s
+ #~ CPU-Frequency      = %s
+ #~ CPU-Cores/Threads  = %i/%i
 
- Memory (free)		= %i kiB
- Memory (available)	= %i kiB
- Memory (total)		= %i kiB
- Swap (free)		= %i kiB
- Swap (total)		= %i kiB
----------------------------------------------------------------\n' "$(printf '%(%s)T')" "$FQDN" "$UNAME" "${CPUINFO['model name']}" "${CPUINFO[frequency]}" "${CPUINFO['cpu cores']}" "${CPUINFO[processor]}" "${LOADAVG[0]}" "${LOADAVG[1]}" "${LOADAVG[2]}" "${MEMINFO[MemFree]}" "${MEMINFO[MemAvailable]}" "${MEMINFO[MemTotal]}" "${MEMINFO[SwapFree]}" "${MEMINFO[SwapTotal]}"
+ #~ Load (1, 5, 15)    = %s %s %s
+
+ #~ Memory (free)      = %i kiB
+ #~ Memory (available) = %i kiB
+ #~ Memory (total)     = %i kiB
+ #~ Swap (free)        = %i kiB
+ #~ Swap (total)       = %i kiB
+#~ ---------------------------------------------------------------\n' "$(printf '%(%s)T')" "$FQDN" "$UNAME" "${CPUINFO['model name']}" "${CPUINFO[frequency]}" "${CPUINFO['cpu cores']}" "${CPUINFO[processor]}" "${LOADAVG[0]}" "${LOADAVG[1]}" "${LOADAVG[2]}" "${MEMINFO[MemFree]}" "${MEMINFO[MemAvailable]}" "${MEMINFO[MemTotal]}" "${MEMINFO[SwapFree]}" "${MEMINFO[SwapTotal]}"
