@@ -96,24 +96,3 @@ print_line 'Memory (total)'     "$LENGTH_MEMINFO" "${MEMINFO[MemTotal]} kiB"
 print_line 'Swap   (free)'      "$LENGTH_MEMINFO" "${MEMINFO[SwapFree]} kiB"
 print_line 'Swap   (total)'     "$LENGTH_MEMINFO" "${MEMINFO[SwapTotal]} kiB"
 draw_full_line "$COLUMNS"
-#~ for OPTION in "${OPTIONS[@]}"; do
-	#~ echo "${!OPTION[@]}"
-#~ done
-
-#~ printf ' System summary (collected %(%H:%M:%S %d.%m.%Y)T)
-#~ ---------------------------------------------------------------
- #~ Hostname       = %s
- #~ Kernel         = %s
-
- #~ CPU-Model      = %s
- #~ CPU-Frequency      = %s
- #~ CPU-Cores/Threads  = %i/%i
-
- #~ Load (1, 5, 15)    = %s %s %s
-
- #~ Memory (free)      = %i kiB
- #~ Memory (available) = %i kiB
- #~ Memory (total)     = %i kiB
- #~ Swap (free)        = %i kiB
- #~ Swap (total)       = %i kiB
-#~ ---------------------------------------------------------------\n' "$(printf '%(%s)T')" "$FQDN" "$UNAME" "${CPUINFO['model name']}" "${CPUINFO[frequency]}" "${CPUINFO['cpu cores']}" "${CPUINFO[processor]}" "${LOADAVG[0]}" "${LOADAVG[1]}" "${LOADAVG[2]}" "${MEMINFO[MemFree]}" "${MEMINFO[MemAvailable]}" "${MEMINFO[MemTotal]}" "${MEMINFO[SwapFree]}" "${MEMINFO[SwapTotal]}"
