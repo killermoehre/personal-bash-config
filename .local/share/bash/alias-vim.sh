@@ -1,1 +1,2 @@
+#!/bash
 alias vim='mvim'
