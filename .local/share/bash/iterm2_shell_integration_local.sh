@@ -1,28 +1,55 @@
 #!/usr/local/bin/bash
 
-function iterm2_print_user_vars() {
-    IFS='-' read -r world_region country dc <<<"$OS_REGION_NAME"
-    case "$world_region" in
-    ap) WORLD_ICON='🌏' ;;
-    eu) WORLD_ICON='🌍' ;;
-    la) WORLD_ICON='🌎' ;;
-    na) WORLD_ICON='🌎' ;;
-    qa) WORLD_ICON='🚧' ;;
+function convert_landscape_into_emoji() {
+    IFS='-' read -r -a landscape <<<"$1"
+    if ((${#landscape[@]} == 3)); then
+        local -r region="${landscape[0]}"
+        local -r country="${landscape[1]}"
+        local -r -i dc="${landscape[2]}"
+    elif ((${#landscape[@]} == 4)); then
+        local -r cluster="${landscape[0]}"
+        local -r region="${landscape[1]}"
+        local -r country="${landscape[2]}"
+        local -r -i dc="${landscape[3]}"
+        case "$cluster" in
+        a) cluster_icon='' ;;   # unknown
+        c) cluster_icon='' ;;   # unknown
+        i) cluster_icon='☁️' ;; # internet facing
+        k) cluster_icon='🎮' ;;  # controller
+        s) cluster_icon='⚖️' ;; # scaleout
+        v) cluster_icon='𝒱🎮' ;; # virtual controller
+        esac
+    else
+        printf '%s' "$1"
+        return 0
+    fi
+    case "$region" in
+    ap) region_icon='🌏' ;;
+    eu) region_icon='🌍' ;;
+    la) region_icon='🌎' ;;
+    na) region_icon='🌎' ;;
+    qa) region_icon='🚧' ;;
     esac
-    declare COUNTRY_FLAG=''
+    declare country_icon=''
     printf -v unicode_start '%d' "'🇦"
     printf -v ascii_start '%d' "'a"
     for ((letter = 0; letter < ${#country}; letter++)); do
         printf -v char_number '%d' "'${country:$letter:1}"
         printf -v codepoint '%x' "$((unicode_start + char_number - ascii_start))"
-        COUNTRY_FLAG+="$(printf '%b' "\\U$codepoint")"
+        country_icon+="$(printf '%b' "\\U$codepoint")"
     done
-    # after ${dc} there is a Variation Selector-16 and a Combining Enclosing Keycap, turning the number into a key
-    iterm2_set_user_var os_region "${OS_REGION_NAME:+$WORLD_ICON$COUNTRY_FLAG${dc}️⃣}"
+    if test -v cluster; then
+        printf '%s' "$cluster_icon"
+    fi
+    printf '%s%s%i⃣️' "$region_icon" "$country_icon" "$dc"
+}
+
+function iterm2_print_user_vars() {
+    iterm2_set_user_var os_region "${OS_REGION_NAME:+$(convert_landscape_into_emoji "$OS_REGION_NAME")}"
     iterm2_set_user_var os_domain "${OS_PROJECT_DOMAIN_NAME:+☀️ $OS_PROJECT_DOMAIN_NAME}"
     iterm2_set_user_var os_project "${OS_PROJECT_NAME:+☁️ $OS_PROJECT_NAME}"
     kube_context="$(kubectl config current-context 2>/dev/null)"
-    iterm2_set_user_var kube_context "${kube_context:+☸️ $kube_context}"
+    iterm2_set_user_var kube_context "${kube_context:+☸️$(convert_landscape_into_emoji "$kube_context")}"
     declare -A git_branch_status=(['branch.ab']='+0 -0')
     while read -r git_status_comment git_option git_argument; do
         if [[ "$git_status_comment" == '#' ]]; then
