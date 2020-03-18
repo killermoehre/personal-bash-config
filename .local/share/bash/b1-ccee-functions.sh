@@ -9,6 +9,7 @@ alias debug_disable="export PS4=''"
 # CCEE
 
 ## ccloud_multitool
+if type -P ccloud-multitool &> /dev/null; then
 cld() {
     exec {fd_ccloud}>>/dev/stdout
     . <(ccloud-multitool --stdout-fd $fd_ccloud "$@")
@@ -18,7 +19,7 @@ source <(cld completion bash --prog-name cld)
 alias ccm="cld"
 alias cls="cld clear"
 alias cll="cld last"
-
+fi
 ## info for stale NAT
 staleNAT() {
     export ROUTER_ID=$1
