@@ -13,7 +13,7 @@ function convert_landscape_into_emoji() {
         local -r -i dc="${landscape[3]}"
         case "$cluster" in
         a) cluster_icon='' ;;   # unknown
-        c) cluster_icon='' ;;   # unknown
+        c) cluster_icon='≥' ;;   # web console
         i) cluster_icon='☁️' ;; # internet facing
         k) cluster_icon='🎮' ;;  # controller
         s) cluster_icon='⚖️' ;; # scaleout
@@ -48,8 +48,10 @@ function iterm2_print_user_vars() {
     iterm2_set_user_var os_region "${OS_REGION_NAME:+$(convert_landscape_into_emoji "$OS_REGION_NAME")}"
     iterm2_set_user_var os_domain "${OS_PROJECT_DOMAIN_NAME:+☀️ $OS_PROJECT_DOMAIN_NAME}"
     iterm2_set_user_var os_project "${OS_PROJECT_NAME:+☁️ $OS_PROJECT_NAME}"
-    kube_context="$(kubectl config current-context 2>/dev/null)"
+    kube_context="$(kubectx -c 2>/dev/null)"
+    kube_namespace="$(kubens -c 2>/dev/null)"
     iterm2_set_user_var kube_context "${kube_context:+☸️$(convert_landscape_into_emoji "$kube_context")}"
+    iterm2_set_user_var kube_namespace "$kube_namespace"
     declare -A git_branch_status=(['branch.ab']='+0 -0')
     while read -r git_status_comment git_option git_argument; do
         if [[ "$git_status_comment" == '#' ]]; then

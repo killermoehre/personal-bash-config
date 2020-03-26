@@ -1,0 +1,59 @@
+[user]
+	email = silvio.knizek@sap.com
+	name = Silvio Knizek
+	signingKey = 0xF023C3F1CA7D681A
+[core]
+	editor = mvim -f
+    quotepath = true
+    commitGraph = true
+	excludesfile = /Users/c5219583/.config/git/gitignore
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    cp = cherry-pick
+    df = diff
+    lg = log -p
+    ph = push origin head
+    phf = push origin head --force-with-lease
+    tree = log --graph --pretty=oneline --abbrev-commit --all --decorate
+    stree = log --pretty=oneline --topo-order --graph --abbrev-commit
+    wdiff = diff --color-words
+    wmdiff = diff master --color-words
+    wshow = show --color-words
+    wmshow = show master --color-words
+    merge = merge --ff-only
+    pull = pull --rebase
+    tt = timetrack
+    graphviz = "!f() { echo 'digraph git {' ; git log --pretty='format: %h -> { %p }' \"$@\" | sed 's/[0-9a-f]\\+/\"&\"/g' ; echo '}'; }; %f"
+    conflicted = !vim +Conflicted
+
+[color]
+    diff = auto
+    status = auto
+    branch = auto
+    ui = true
+
+[commit]
+    gpgsign = true
+    verbose = true
+[icdiff]
+    options = --highlight --line-numbers
+[fetch]
+    prune = true
+[pull]
+    rebase = true
+[rebase]
+    autoStash = true
+[gc]
+    writeCommitGraph = true
+[rerere]
+    enabled = true
+    autoupdate = true
+[hub]
+	host = github.wdf.sap.corp
+	host = github.wdf.sap.corp
+	protocol = ssh
+[credential]
+	helper = osxkeychain
