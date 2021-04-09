@@ -1,0 +1,11 @@
+# vim: ft=gitconfig:
+[user]
+	email = silvio.knizek@sap.com
+	name = Silvio Knizek
+	signingKey = 0xF023C3F1CA7D681A
+
+[core]
+    editor = mvim -f
+
+[credential]
+    helper = osxkeychain

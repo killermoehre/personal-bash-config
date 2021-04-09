@@ -1,12 +1,9 @@
-[user]
-	email = silvio.knizek@sap.com
-	name = Silvio Knizek
-	signingKey = 0xF023C3F1CA7D681A
+[include]
+    path = .gitconfig-custom
 [core]
-	editor = mvim -f
     quotepath = true
     commitGraph = true
-	excludesfile = /Users/c5219583/.config/git/gitignore
+	excludesfile = ~/.config/git/gitignore
 [alias]
     st = status
     ci = commit
@@ -53,10 +50,5 @@
 [rerere]
     enabled = true
     autoupdate = true
-[hub]
-	host = github.wdf.sap.corp
-	protocol = ssh
-[credential]
-	helper = osxkeychain
 [advice]
 	addIgnoredFile = false
