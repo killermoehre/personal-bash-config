@@ -1,2 +1,2 @@
 #!/bash
-[[ $- == *i* ]] && . $HOME/.local/share/blesh/ble.sh --noattach
+[[ $- == *i* ]] && source /Users/c5219583/.local/share/blesh/ble.sh --noattach

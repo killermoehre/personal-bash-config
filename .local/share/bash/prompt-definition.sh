@@ -7,6 +7,7 @@ if [[ "$(type -t iterm2_prompt_mark)" == 'function' ]]; then
 else
     export PS1="$PS1"'[\u@\H:\W]\$ '
 fi
+export PS1='\$ '
 export PS2='> '
 export PS3='> '
 export PS4='+ '

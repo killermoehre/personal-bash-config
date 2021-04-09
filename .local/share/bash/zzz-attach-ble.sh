@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-((_ble_bash)) && ble-attach
+[[ ${BLE_VERSION-} ]] && ble-attach

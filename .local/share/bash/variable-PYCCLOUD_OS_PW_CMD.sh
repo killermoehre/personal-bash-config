@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-export PYCCLOUD_OS_PW_CMD="security find-generic-password -a $USER -s 'Enterprise Connect' -w"
+export PYCCLOUD_OS_PW_CMD="security find-generic-password -s Exchange -w"

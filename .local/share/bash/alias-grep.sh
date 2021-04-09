@@ -1,2 +1,2 @@
 #!/bash
-alias grep='rg --color=auto '
+alias grep='rg --color=auto'

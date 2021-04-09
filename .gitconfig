@@ -44,6 +44,8 @@
     prune = true
 [pull]
     rebase = true
+[push]
+    gpgSign = if-asked
 [rebase]
     autoStash = true
 [gc]
@@ -53,7 +55,8 @@
     autoupdate = true
 [hub]
 	host = github.wdf.sap.corp
-	host = github.wdf.sap.corp
 	protocol = ssh
 [credential]
 	helper = osxkeychain
+[advice]
+	addIgnoredFile = false
