@@ -6,9 +6,15 @@ Plug 'airblade/vim-gitgutter'
 Plug 'wincent/Terminus'
 Plug 'plytophogy/vim-virtualenv'
 Plug 'w0rp/ale'
-Plug 'pearofducks/ansible-vim', { 'do': 'cd ./UltiSnips; VIRTUAL_ENV=/usr/local/Cellar/ansible/2.7.10/libexec /usr/local/Cellar/ansible/2.7.10/libexec/bin/python ./generate.py' }
 Plug 'powerline/powerline'
 Plug 'altercation/vim-colors-solarized'
+Plug 'preservim/nerdtree'
+Plug 'Xuyuanp/nerdtree-git-plugin'
+Plug 'dhruvasagar/vim-table-mode'
+Plug 'cespare/vim-toml'
+Plug 'python-mode/python-mode', { 'for': 'python', 'branch': 'develop' }
+Plug 'towolf/vim-helm'
+Plug 'integralist/vim-mypy'
 call plug#end()
 
 set backup
@@ -82,3 +88,42 @@ let g:ale_lint_delay = 1000
 " use nice symbols for errors and warnings
 let g:ale_sign_error = '✗ '
 let g:ale_sign_warning = '⚠ '
+
+" === nerdTREE ===
+autocmd vimenter * NERDTree
+
+" enable pymode; see :help pymode.txt
+let g:pymode = 1
+let g:pymode_python = 'python3'
+let g:pymode_trim_whitespace = 1
+let g:pymode_options_max_line_length = 176
+let g:pymode_options_colorcolumn = 1
+let g:pymode_indent = 1
+let g:pymode_virtualenv = 1
+let g:pymode_run = 1
+let g:pymode_lint = 1
+let g:pymode_lint_on_write = 1
+let g:pymode_lint_on_fly = 1
+let g:pymode_lint_message = 1
+let g:pymode_lint_signs = 1
+let g:pymode_lint_todo_symbol = '🔜'
+let g:pymode_lint_comment_symbol = '💭 '
+let g:pymode_lint_visual_symbol = '👀 '
+let g:pymode_lint_error_symbol = '⚠️ '
+let g:pymode_lint_info_symbol = 'ℹ️ '
+let g:pymode_lint_pyflakes_symbol = '❄︎ '
+let g:pymode_rope_completion = 1
+let g:pymode_rope_complete_on_ot = 1
+let g:pymode_rope_completion_bind = '<C-Tab>'
+let g:pymode_syntax = 1
+let g:pymode_syntax_slow_sync = 1
+let g:pymode_syntax_all = 1
+let g:pymode_syntax_indent_errors = g:pymode_syntax_all
+let g:pymode_syntax_space_errors = g:pymode_syntax_all
+let g:pymode_syntax_string_formatting = g:pymode_syntax_all
+let g:pymode_syntax_string_format = g:pymode_syntax_all
+let g:pymode_syntax_string_templates = g:pymode_syntax_all
+let g:pymode_syntax_doctests = g:pymode_syntax_all
+let g:pymode_syntax_builtin_types = g:pymode_syntax_all
+let g:pymode_syntax_highlight_exceptions = g:pymode_syntax_all
+let g:pymode_syntax_docstrings = g:pymode_syntax_all
