@@ -1,6 +1,6 @@
 # vim: ft=gitconfig:
 [user]
-	email = killrmoehre@gmx.net
+	email = killermoehre@gmx.net
 	name = Silvio Knizek
 	signingKey = 0x663429403340EF5C
 
