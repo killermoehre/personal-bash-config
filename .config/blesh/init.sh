@@ -29,7 +29,7 @@
 ## The following setting specifies the pager used by ble.sh.  This is used to
 ## show the help of commands (f1).
 
-bleopt pager=most
+bleopt pager=less
 
 ## The following setting specifies the editor used by ble.sh.  This is used for
 ## the widget edit-and-execute (C-x C-e) and editor for a large amount of
@@ -179,7 +179,7 @@ bleopt allow_exit_with_jobs=1
 ## value is specified the cursor position is the beginning or the end of the
 ## command lines when the move is to a newer or older entry, respectively.
 
-bleopt history_preserve_point=1
+bleopt history_preserve_point=
 
 ## The following setting controls the history sharing. If it has non-empty
 ## value, the history sharing is enabled. With the history sharing, the command
