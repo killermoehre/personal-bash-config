@@ -12,7 +12,7 @@ function debug_echo() {
     fi
 }
 
-declare -a source_files_dirs=('/etc/profile' '/usr/local/etc/profile.d' "$HOME/.local/share/bash")
+declare -a source_files_dirs=('/etc/profile' '/etc/profile.d' '/usr/local/etc/profile.d' "$HOME/.local/share/bash")
 declare -x -r BASH_COMPLETION_COMPAT_DIR='/usr/local/etc/bash_completion.d' # to be able to use /usr/local/etc/bash_completion.d
 for source_file_dir in "${source_files_dirs[@]}"; do
     if test -f "$source_file_dir"; then
