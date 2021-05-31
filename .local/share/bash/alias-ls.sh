@@ -1,2 +1,2 @@
 #!/bash
-alias ls='exa --colour=auto '
+alias ls='exa --colour=auto --icons '
