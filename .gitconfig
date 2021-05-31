@@ -52,5 +52,3 @@
     autoupdate = true
 [advice]
 	addIgnoredFile = false
-[diff]
-	tool = gvimdiff

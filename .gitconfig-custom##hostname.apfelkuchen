@@ -9,3 +9,6 @@
 
 [credential]
     helper = osxkeychain
+
+[diff]
+    tool = gvimdiff
