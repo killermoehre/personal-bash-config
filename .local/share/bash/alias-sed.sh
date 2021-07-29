@@ -1,0 +1,2 @@
+#!/bash
+alias sed='gsed'

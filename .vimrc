@@ -61,9 +61,7 @@ au QuickFixCmdPost    l* nested lwindow
 
 " === ale ===
 let g:ale_fix_on_save = 1
-let g:ale_fixers = {
-\   '*': ['vim-lsp', 'remove_trailing_lines', 'trim_whitespace'],
-\}
+
 " always show gutter-line (remove pop-in-pop-out flicker)
 let g:ale_sign_column_always = 1
 
@@ -75,3 +73,6 @@ let g:ale_lint_delay = 1000
 let g:ale_sign_error = '✗ '
 let g:ale_sign_warning = '⚠ '
 
+" === ale-lsp-bridge ===
+" enable LSP as auto-linter in ALE
+let g:lsp_ale_auto_enable_lint = v:true

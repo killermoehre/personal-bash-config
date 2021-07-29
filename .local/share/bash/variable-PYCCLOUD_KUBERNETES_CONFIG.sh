@@ -1,2 +1,2 @@
-#!/usr/bin/env bash
-export PYCCLOUD_KUBERNETES_CONFIG="$HOME/.kube/config"
+#!/hint/bash
+declare -x PYCCLOUD_KUBERNETES_CONFIG="$HOME/Library/Application Support/SAPCC/u8s/.kube/config"
