@@ -15,6 +15,7 @@ Plug 'mattn/vim-lsp-settings'
 Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'rhysd/vim-lsp-ale'
+Plug 'editorconfig/editorconfig-vim'
 call plug#end()
 
 set backup
