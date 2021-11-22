@@ -1,3 +1,3 @@
 #!/hint/bash
 
-declare -x HISTCONTROL='ignoreboth:erasedups'
+declare -x HISTCONTROL='ignoreboth'
