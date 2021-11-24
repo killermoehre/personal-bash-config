@@ -1,2 +1,2 @@
 #!/bash
-alias tree='exa -T '
+alias tree='exa --tree --color=auto --icons '
