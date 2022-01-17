@@ -6,7 +6,7 @@ Plug 'wincent/Terminus'
 Plug 'plytophogy/vim-virtualenv'
 Plug 'powerline/powerline'
 Plug 'altercation/vim-colors-solarized'
-Plug 'cespare/vim-toml'
+Plug 'cespare/vim-toml', { 'branch': 'main' }
 Plug 'towolf/vim-helm'
 Plug 'integralist/vim-mypy'
 Plug 'dense-analysis/ale'
