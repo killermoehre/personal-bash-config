@@ -1,2 +1,3 @@
 #!/bash
-alias openstack='openstack --os-password "$(security find-generic-password -s Exchange -w)"'
+alias openstack='OS_PASSWORD="$(security find-generic-password -s Exchange -w)" openstack'
+
