@@ -16,6 +16,9 @@ Plug 'prabirshrestha/asyncomplete.vim'
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 Plug 'rhysd/vim-lsp-ale'
 Plug 'editorconfig/editorconfig-vim'
+Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'pearofducks/ansible-vim'
+Plug 'fannheyward/coc-markdownlint'
 call plug#end()
 
 set backup
@@ -53,14 +56,15 @@ inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
-inoremap {<CR> {<CR>}<ESC>O
-inoremap {;<CR> {<CR>};<ESC>O
+" inoremap {<CR> {<CR>}<ESC>O
+" inoremap {;<CR> {<CR>};<ESC>O
 
 " open quickfix window when compiler found something
 au QuickFixCmdPost [^l]* nested cwindow
 au QuickFixCmdPost    l* nested lwindow
 
 " === ale ===
+let g:ale_lint_on_save = 1
 let g:ale_fix_on_save = 1
 
 " always show gutter-line (remove pop-in-pop-out flicker)
