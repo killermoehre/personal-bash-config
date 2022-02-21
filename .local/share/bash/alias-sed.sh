@@ -1,2 +1,4 @@
 #!/bash
-alias sed='gsed'
+if type -P gsed &> /dev/null; then
+    alias sed='gsed'
+fi
