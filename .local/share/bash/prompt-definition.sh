@@ -11,4 +11,4 @@ export PS1='\$ '
 export PS2='> '
 export PS3='> '
 export PS4='+ '
-export PROMPT_COMMAND="kill -s SIGWINCH \$BASHPID; history -a;${PROMPT_COMMAND:- $PROMPT_COMMAND}"
+export PROMPT_COMMAND="history -a;${PROMPT_COMMAND:- $PROMPT_COMMAND}"

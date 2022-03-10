@@ -3,7 +3,7 @@
 [core]
     quotepath = true
     commitGraph = true
-	excludesfile = ~/.config/git/gitignore
+    excludesfile = ~/.config/git/gitignore
 [alias]
     st = status
     ci = commit
