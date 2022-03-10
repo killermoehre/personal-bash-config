@@ -51,8 +51,8 @@
     enabled = true
     autoupdate = true
 [advice]
-	addIgnoredFile = false
+    addIgnoredFile = false
 [init]
-	defaultBranch = main
+    defaultBranch = main
 [mergetool]
-	keepBackup = false
+    keepBackup = false
