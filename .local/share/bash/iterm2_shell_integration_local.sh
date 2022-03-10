@@ -65,7 +65,7 @@ function iterm2_print_user_vars() {
         ((git_ahead == 0)) && unset git_ahead
         ((git_behind == 0)) && unset git_behind
     fi
-    iterm2_set_user_var git_branch "${git_branch_status[branch.head]:+⌥ ${git_branch_status[branch.head]}}"
+    iterm2_set_user_var git_branch "${git_branch_status[branch.head]:+⌥ ${git_branch_status[branch.head]}${git_branch_status[branch.upstream]:+ → ${git_branch_status[branch.upstream]}}}"
     iterm2_set_user_var git_ahead "${git_ahead:+↑ $git_ahead}"
     iterm2_set_user_var git_behind "${git_behind:+↓ $git_behind}"
 }
