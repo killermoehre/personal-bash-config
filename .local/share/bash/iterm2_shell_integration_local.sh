@@ -48,10 +48,8 @@ function iterm2_print_user_vars() {
     iterm2_set_user_var os_region "${OS_REGION_NAME:+$(convert_landscape_into_emoji "$OS_REGION_NAME")}"
     iterm2_set_user_var os_domain "${OS_PROJECT_DOMAIN_NAME:+☀️ $OS_PROJECT_DOMAIN_NAME}"
     iterm2_set_user_var os_project "${OS_PROJECT_NAME:+☁️ $OS_PROJECT_NAME}"
-    kube_context="$(kubectx -c 2>/dev/null)"
-    kube_namespace="$(kubens -c 2>/dev/null)"
-    iterm2_set_user_var kube_context "${kube_context:+☸️$(convert_landscape_into_emoji "$kube_context")}"
-    iterm2_set_user_var kube_namespace "$kube_namespace"
+    iterm2_set_user_var kube_context "${KUBECTL_CONTEXT:+☸️$(convert_landscape_into_emoji "$KUBECTL_CONTEXT")}"
+    iterm2_set_user_var kube_namespace "$KUBECTL_NAMESPACE"
     declare -A git_branch_status=(['branch.ab']='+0 -0')
     while read -r git_status_comment git_option git_argument; do
         if [[ "$git_status_comment" == '#' ]]; then
