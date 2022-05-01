@@ -1524,7 +1524,7 @@
 	<key>NoSyncLastSystemPythonVersionRequirement</key>
 	<string>1.17</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>5</integer>
+	<integer>6</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>673184226.29628098</real>
 	<key>NoSyncPermissionToShowTip</key>
