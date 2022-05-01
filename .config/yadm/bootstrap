@@ -1,9 +1,12 @@
 #!/bin/bash
 
 declare _file=""
-printf 'Running yadm boostrap\n'
+printf 'Running yadm bootstrap\n'
+export PATH="/usr/local/bin:/usr/sbin:/sbin:$PATH"
+export SSH_AUTH_SOCK="$HOME/.gnupg/S.gpg-agent.ssh"
 for _file in "$HOME/.config/yadm/bootstrap.d/"*; do
     test -x "$_file" || continue
+    [[ "$_file" =~ *~ ]] && continue
     printf 'Executing %s\n' "$_file"
-    "./$_file"
+    "$_file"
 done

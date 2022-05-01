@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>autohide</key>
-	<false/>
+	<true/>
 	<key>largesize</key>
 	<real>128</real>
 	<key>last-analytics-stamp</key>
@@ -15,6 +15,8 @@
 	<key>loc</key>
 	<string>de_DE:DE</string>
 	<key>magnification</key>
+	<false/>
+	<key>minimize-to-application</key>
 	<false/>
 	<key>mod-count</key>
 	<integer>32</integer>

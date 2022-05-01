@@ -55,7 +55,7 @@
 	<key>NSWindow Frame ProfilesPanel</key>
 	<string>570 293 735 388 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 491 736 479 0 0 1920 1080 </string>
+	<string>0 0 1680 1025 0 0 1680 1025 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
