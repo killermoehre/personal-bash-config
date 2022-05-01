@@ -10,7 +10,7 @@ kibana_columns: 'kubernetes.container_name,log'
 kubeconfig: ~/Library/Application Support/SAPCC/u8s/.kube/config
 kubectl_add_context_config: true
 last_context_file: ~/.config/ccloud_multitool/last_project
-password_command: security find-generic-password -a $USER -s Exchange -w
+password_command: security find-generic-password -a $USER -s com.jamfsoftware.SelfService.credentials -w
 password_type: command
 run_u8s: true
 save_projects_for_autocomplete: true
