@@ -7,5 +7,5 @@ if test -d ble.sh; then
 else
     git clone --recursive https://github.com/akinomyoga/ble.sh.git
 fi
-/usr/local/bin/gmake -C ble.sh install PREFIX="$HOME/.local"
+gmake -C ble.sh install PREFIX="$HOME/.local"
 popd || exit 0
