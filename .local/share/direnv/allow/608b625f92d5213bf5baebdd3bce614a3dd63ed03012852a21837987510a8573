@@ -1,0 +1,1 @@
+/Users/c5219583/openstack/eu-de-1/openstack: 'domain list -f value -c Name' is not an openstack command. See 'openstack --help'./.envrc
