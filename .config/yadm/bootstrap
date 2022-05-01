@@ -5,5 +5,5 @@ printf 'Running yadm boostrap\n'
 for _file in "$HOME/.config/yadm/bootstrap.d/"*; do
     test -x "$_file" || continue
     printf 'Executing %s\n' "$_file"
-    . "$_file"
+    "./$_file"
 done
