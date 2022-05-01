@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AKLastEmailListRequestDateKey</key>
+	<date>2022-05-01T11:36:17Z</date>
+	<key>AKLastIDMSEnvironment</key>
+	<integer>0</integer>
+	<key>AppleAccentColor</key>
+	<integer>-1</integer>
+	<key>AppleAquaColorVariant</key>
+	<integer>6</integer>
+	<key>AppleHighlightColor</key>
+	<string>0.847059 0.847059 0.862745 Graphite</string>
+	<key>AppleInterfaceStyle</key>
+	<string>Dark</string>
+	<key>AppleLanguages</key>
+	<array>
+		<string>de-DE</string>
+		<string>en-GB</string>
+	</array>
+	<key>AppleLanguagesDidMigrate</key>
+	<string>12.3.1</string>
+	<key>AppleLanguagesSchemaVersion</key>
+	<integer>2000</integer>
+	<key>AppleLocale</key>
+	<string>de_DE@calendar=iso8601</string>
+	<key>NSLinguisticDataAssetsRequestLastInterval</key>
+	<real>86400</real>
+	<key>NSLinguisticDataAssetsRequestTime</key>
+	<date>2022-05-01T11:37:05Z</date>
+	<key>NSLinguisticDataAssetsRequested</key>
+	<array>
+		<string>de</string>
+		<string>en</string>
+	</array>
+	<key>NSLinguisticDataAssetsRequestedByChecker</key>
+	<array>
+		<string>en</string>
+		<string>de</string>
+	</array>
+	<key>NSQuitAlwaysKeepsWindows</key>
+	<true/>
+	<key>NSTableViewDefaultSizeMode</key>
+	<integer>1</integer>
+	<key>NSUserDictionaryReplacementItems</key>
+	<array>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
+			<string>vlg</string>
+			<key>with</key>
+			<string>Viele liebe Grüße!</string>
+		</dict>
+	</array>
+	<key>_HIHideMenuBar</key>
+	<false/>
+	<key>com.apple.finder.SyncExtensions</key>
+	<dict>
+		<key>collaborationMap</key>
+		<dict/>
+		<key>dirMap</key>
+		<dict/>
+	</dict>
+	<key>com.apple.sound.beep.flash</key>
+	<integer>0</integer>
+	<key>com.apple.springing.delay</key>
+	<real>0.5</real>
+	<key>com.apple.springing.enabled</key>
+	<true/>
+	<key>com.apple.swipescrolldirection</key>
+	<false/>
+	<key>com.apple.trackpad.forceClick</key>
+	<true/>
+</dict>
+</plist>
