@@ -1,20 +1,9 @@
 #!/bin/bash
 
-# vim: ft=sh
-
-pushd "$HOME" || exit
-
-system_type=$(uname -s)
-
-if [ "$system_type" = "Darwin" ]; then
-  # install homebrew if it's missing
-  if ! command -v brew >/dev/null 2>&1; then
-    echo "Installing homebrew"
-    /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  fi
-
-  if [ -f "$HOME/.Brewfile" ]; then
-    echo "Updating homebrew bundle"
-    brew bundle --global
-  fi
-fi
+declare _file=""
+printf 'Running yadm boostrap\n'
+for _file in "$HOME/.config/yadm/bootstrap.d/"*; do
+    test -x "$_file" || continue
+    printf 'Executing %s\n' "$_file"
+    . "$_file"
+done

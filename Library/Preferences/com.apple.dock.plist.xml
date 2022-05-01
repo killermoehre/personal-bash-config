@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>mod-count</key>
-	<integer>25</integer>
+	<integer>27</integer>
 	<key>persistent-apps</key>
 	<array>
 		<dict>
@@ -57,6 +57,8 @@
 			<string>file-tile</string>
 		</dict>
 	</array>
+	<key>persistent-others</key>
+	<array/>
 	<key>recent-apps</key>
 	<array>
 		<dict>
@@ -109,6 +111,109 @@
 			<key>tile-type</key>
 			<string>file-tile</string>
 		</dict>
+		<dict>
+			<key>GUID</key>
+			<integer>1424801513</integer>
+			<key>tile-data</key>
+			<dict>
+				<key>book</key>
+				<data>
+				Ym9va0gCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAaAEAAAQAAAADAwAAAAAAIAYA
+				AAABAQAAU3lzdGVtAAAMAAAAAQEAAEFwcGxpY2F0aW9u
+				cw0AAAABAQAAQXBwIFN0b3JlLmFwcAAAAAwAAAABBgAA
+				EAAAACAAAAA0AAAACAAAAAQDAAAVAAAA////DwgAAAAE
+				AwAAFwAAAP///w8IAAAABAMAABoAAAD///8PDAAAAAEG
+				AABgAAAAcAAAAIAAAAAIAAAAAAQAAEHD93s0gAAAGAAA
+				AAECAAACAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAA
+				AQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQI
+				AAAABAMAAABQBl46AAAAJAAAAAEBAAA1QzFGMzdDMS0x
+				N0EyLTRDMDAtQjlEQS1EOTdBRDAyMkEyNkUYAAAAAQIA
+				AIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAA
+				LwAAAAAAAAABBQAAqAAAAP7///8BAAAAAAAAAA0AAAAE
+				EAAATAAAAAAAAAAFEAAAkAAAAAAAAAAQEAAAtAAAAAAA
+				AABAEAAApAAAAAAAAAACIAAAVAEAAAAAAAAFIAAA1AAA
+				AAAAAAAQIAAA5AAAAAAAAAARIAAACAEAAAAAAAASIAAA
+				+AAAAAAAAAATIAAApAAAAAAAAAAgIAAANAEAAAAAAAAw
+				IAAAYAEAAAAAAAAQ0AAABAAAAAAAAAA=
+				</data>
+				<key>bundle-identifier</key>
+				<string>com.apple.AppStore</string>
+				<key>dock-extra</key>
+				<true/>
+				<key>file-data</key>
+				<dict>
+					<key>_CFURLString</key>
+					<string>file:///System/Applications/App%20Store.app/</string>
+					<key>_CFURLStringType</key>
+					<integer>15</integer>
+				</dict>
+				<key>file-label</key>
+				<string>App Store</string>
+				<key>file-mod-date</key>
+				<integer>3731124073</integer>
+				<key>file-type</key>
+				<integer>1</integer>
+				<key>is-beta</key>
+				<false/>
+				<key>parent-mod-date</key>
+				<integer>3731124073</integer>
+			</dict>
+			<key>tile-type</key>
+			<string>file-tile</string>
+		</dict>
+		<dict>
+			<key>GUID</key>
+			<integer>1424801514</integer>
+			<key>tile-data</key>
+			<dict>
+				<key>book</key>
+				<data>
+				Ym9vaywCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAATAEAAAQAAAADAwAAAAAAIAwA
+				AAABAQAAQXBwbGljYXRpb25zCQAAAAEBAABTbGFjay5h
+				cHAAAAAIAAAAAQYAABAAAAAkAAAACAAAAAQDAABZ/L4Q
+				AAAAAAgAAAAEAwAAinjhEAAAAAAIAAAAAQYAAEgAAABY
+				AAAACAAAAAAEAABBxAiDMAAAABgAAAABAgAAAgAAAAAA
+				AAAPAAAAAAAAAAAAAAAAAAAACAAAAAEJAABmaWxlOi8v
+				LwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAUAZe
+				OgAAAAgAAAAABAAAQcP3ezSAAAAkAAAAAQEAADVDMUYz
+				N0MxLTE3QTItNEMwMC1COURBLUQ5N0FEMDIyQTI2RRgA
+				AAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAA
+				AAEBAAAvAAAAAAAAAAEFAACoAAAA/v///wEAAAAAAAAA
+				DQAAAAQQAAA4AAAAAAAAAAUQAABoAAAAAAAAABAQAACI
+				AAAAAAAAAEAQAAB4AAAAAAAAAAIgAAA4AQAAAAAAAAUg
+				AACoAAAAAAAAABAgAAC4AAAAAAAAABEgAADsAAAAAAAA
+				ABIgAADMAAAAAAAAABMgAADcAAAAAAAAACAgAAAYAQAA
+				AAAAADAgAABEAQAAAAAAABDQAAAEAAAAAAAAAA==
+				</data>
+				<key>bundle-identifier</key>
+				<string>com.tinyspeck.slackmacgap</string>
+				<key>dock-extra</key>
+				<false/>
+				<key>file-data</key>
+				<dict>
+					<key>_CFURLString</key>
+					<string>file:///Applications/Slack.app/</string>
+					<key>_CFURLStringType</key>
+					<integer>15</integer>
+				</dict>
+				<key>file-label</key>
+				<string>Slack</string>
+				<key>file-mod-date</key>
+				<integer>68319484064088</integer>
+				<key>file-type</key>
+				<integer>1</integer>
+				<key>is-beta</key>
+				<false/>
+				<key>parent-mod-date</key>
+				<integer>57938548109656</integer>
+			</dict>
+			<key>tile-type</key>
+			<string>file-tile</string>
+		</dict>
 	</array>
+	<key>version</key>
+	<integer>1</integer>
 </dict>
 </plist>
