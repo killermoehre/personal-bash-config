@@ -2,73 +2,52 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>autohide</key>
-	<true/>
-	<key>largesize</key>
-	<real>128</real>
-	<key>last-analytics-stamp</key>
-	<array>
-		<real>673097780.21078598</real>
-	</array>
-	<key>launchanim</key>
-	<false/>
-	<key>loc</key>
-	<string>de_DE:DE</string>
-	<key>mineffect</key>
-	<string>scale</string>
 	<key>mod-count</key>
-	<integer>23</integer>
-	<key>orientation</key>
-	<string>left</string>
+	<integer>25</integer>
 	<key>persistent-apps</key>
-	<array/>
-	<key>persistent-others</key>
-	<array/>
-	<key>recent-apps</key>
 	<array>
 		<dict>
 			<key>GUID</key>
-			<integer>1424801510</integer>
+			<integer>1424801512</integer>
 			<key>tile-data</key>
 			<dict>
 				<key>book</key>
 				<data>
-				Ym9vazQCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
-				AAAAAAAAAAAAAAAAAAAAVAEAAAQAAAADAwAAAAAAIAwA
-				AAABAQAAQXBwbGljYXRpb25zEQAAAAEBAABHb29nbGUg
-				Q2hyb21lLmFwcAAAAAgAAAABBgAAEAAAACQAAAAIAAAA
-				BAMAAFn8vhAAAAAACAAAAAQDAADJSBAAAAAAAAgAAAAB
-				BgAAUAAAAGAAAAAIAAAAAAQAAEHAXDrGAAAAGAAAAAEC
-				AAACAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAAAQkA
-				AGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQIAAAA
-				BAMAAABQBl46AAAACAAAAAAEAABBw/d7NIAAACQAAAAB
-				AQAANUMxRjM3QzEtMTdBMi00QzAwLUI5REEtRDk3QUQw
-				MjJBMjZFGAAAAAECAACBAAAAAQAAAO8TAAABAAAAAAAA
-				AAAAAAABAAAAAQEAAC8AAAAAAAAAAQUAAKgAAAD+////
-				AQAAAAAAAAANAAAABBAAAEAAAAAAAAAABRAAAHAAAAAA
-				AAAAEBAAAJAAAAAAAAAAQBAAAIAAAAAAAAAAAiAAAEAB
-				AAAAAAAABSAAALAAAAAAAAAAECAAAMAAAAAAAAAAESAA
-				APQAAAAAAAAAEiAAANQAAAAAAAAAEyAAAOQAAAAAAAAA
-				ICAAACABAAAAAAAAMCAAAEwBAAAAAAAAENAAAAQAAAAA
-				AAAA
+				Ym9vazACAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAUAEAAAQAAAADAwAAAAAAIAwA
+				AAABAQAAQXBwbGljYXRpb25zDgAAAAEBAABQcml2aWxl
+				Z2VzLmFwcAAACAAAAAEGAAAQAAAAJAAAAAgAAAAEAwAA
+				Wfy+EAAAAAAIAAAABAMAAM4Ciw4AAAAACAAAAAEGAABM
+				AAAAXAAAAAgAAAAABAAAQcMOOuuAAAAYAAAAAQIAAAIA
+				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAABCQAAZmls
+				ZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAA
+				AFAGXjoAAAAIAAAAAAQAAEHD93s0gAAAJAAAAAEBAAA1
+				QzFGMzdDMS0xN0EyLTRDMDAtQjlEQS1EOTdBRDAyMkEy
+				NkUYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAA
+				AAEAAAABAQAALwAAAAAAAAABBQAAqAAAAP7///8BAAAA
+				AAAAAA0AAAAEEAAAPAAAAAAAAAAFEAAAbAAAAAAAAAAQ
+				EAAAjAAAAAAAAABAEAAAfAAAAAAAAAACIAAAPAEAAAAA
+				AAAFIAAArAAAAAAAAAAQIAAAvAAAAAAAAAARIAAA8AAA
+				AAAAAAASIAAA0AAAAAAAAAATIAAA4AAAAAAAAAAgIAAA
+				HAEAAAAAAAAwIAAASAEAAAAAAAAQ0AAABAAAAAAAAAA=
 				</data>
 				<key>bundle-identifier</key>
-				<string>com.google.Chrome</string>
+				<string>corp.sap.privileges</string>
 				<key>dock-extra</key>
-				<false/>
+				<true/>
 				<key>file-data</key>
 				<dict>
 					<key>_CFURLString</key>
-					<string>file:///Applications/Google%20Chrome.app/</string>
+					<string>file:///Applications/Privileges.app/</string>
 					<key>_CFURLStringType</key>
 					<integer>15</integer>
 				</dict>
 				<key>file-label</key>
-				<string>Google Chrome</string>
+				<string>Privileges</string>
 				<key>file-mod-date</key>
-				<integer>3733277167</integer>
+				<integer>131820550895212</integer>
 				<key>file-type</key>
-				<integer>1</integer>
+				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
@@ -77,6 +56,9 @@
 			<key>tile-type</key>
 			<string>file-tile</string>
 		</dict>
+	</array>
+	<key>recent-apps</key>
+	<array>
 		<dict>
 			<key>GUID</key>
 			<integer>1424801511</integer>
@@ -128,17 +110,5 @@
 			<string>file-tile</string>
 		</dict>
 	</array>
-	<key>region</key>
-	<string>DE</string>
-	<key>show-process-indicators</key>
-	<true/>
-	<key>tilesize</key>
-	<real>128</real>
-	<key>trash-full</key>
-	<true/>
-	<key>version</key>
-	<integer>1</integer>
-	<key>wvous-br-corner</key>
-	<integer>14</integer>
 </dict>
 </plist>
