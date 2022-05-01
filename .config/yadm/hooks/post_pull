@@ -1,0 +1,3 @@
+#!/bin/sh
+
+find "$HOME/.config/yadm/hooks/post_pull.d/" -type f -perm +x -exec {} \;

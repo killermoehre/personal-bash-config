@@ -1,0 +1,3 @@
+#!/bin/sh
+
+find "$HOME/.config/yadm/hooks/pre_commit.d/" -type f -perm +x -exec {} \;
