@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/usr/bin/env bash
 
 function convert_landscape_into_emoji() {
     IFS='-' read -r -a landscape <<<"$1"
