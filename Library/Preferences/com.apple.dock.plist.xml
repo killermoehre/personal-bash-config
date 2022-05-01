@@ -91,5 +91,7 @@
 	<true/>
 	<key>version</key>
 	<integer>1</integer>
+	<key>wvous-br-corner</key>
+	<integer>14</integer>
 </dict>
 </plist>

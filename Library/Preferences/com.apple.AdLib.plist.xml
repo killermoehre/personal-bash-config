@@ -12,6 +12,8 @@
 	<true/>
 	<key>allowIdentifierForAdvertising</key>
 	<true/>
+	<key>partiality-segment</key>
+	<string>https://partiality.itunes.apple.com/WebObjects/MZPartiality.woa/wa/IAD/segment</string>
 	<key>personalizedAdsMigrated</key>
 	<true/>
 </dict>

@@ -8,6 +8,8 @@
 	<integer>0</integer>
 	<key>AppleAccentColor</key>
 	<integer>-1</integer>
+	<key>AppleAntiAliasingThreshold</key>
+	<integer>4</integer>
 	<key>AppleAquaColorVariant</key>
 	<integer>6</integer>
 	<key>AppleHighlightColor</key>
@@ -25,6 +27,12 @@
 	<integer>2000</integer>
 	<key>AppleLocale</key>
 	<string>de_DE@calendar=iso8601</string>
+	<key>AppleMiniaturizeOnDoubleClick</key>
+	<false/>
+	<key>NSAutomaticCapitalizationEnabled</key>
+	<true/>
+	<key>NSAutomaticPeriodSubstitutionEnabled</key>
+	<true/>
 	<key>NSLinguisticDataAssetsRequestLastInterval</key>
 	<real>86400</real>
 	<key>NSLinguisticDataAssetsRequestTime</key>
@@ -39,6 +47,16 @@
 		<string>en</string>
 		<string>de</string>
 	</array>
+	<key>NSPreferredWebServices</key>
+	<dict>
+		<key>NSWebServicesProviderWebSearch</key>
+		<dict>
+			<key>NSDefaultDisplayName</key>
+			<string>Google</string>
+			<key>NSProviderIdentifier</key>
+			<string>com.google.www</string>
+		</dict>
+	</dict>
 	<key>NSQuitAlwaysKeepsWindows</key>
 	<true/>
 	<key>NSTableViewDefaultSizeMode</key>
