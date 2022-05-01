@@ -17,4 +17,6 @@ if [ "$system_type" = "Darwin" ]; then
     echo "Updating homebrew bundle"
     brew bundle --global
   fi
+  brew services start openssl-osx-ca
+  brew services start ssh-askpass
 fi

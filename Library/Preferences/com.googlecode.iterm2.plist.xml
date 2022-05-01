@@ -55,7 +55,7 @@
 	<key>NSWindow Frame ProfilesPanel</key>
 	<string>570 293 735 388 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 0 1680 1025 0 0 1680 1025 </string>
+	<string>0 579 730 500 0 0 1728 1085 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1524,7 +1524,7 @@
 	<key>NoSyncLastSystemPythonVersionRequirement</key>
 	<string>1.17</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>6</integer>
+	<integer>7</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>673184226.29628098</real>
 	<key>NoSyncPermissionToShowTip</key>

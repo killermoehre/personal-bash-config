@@ -12,14 +12,28 @@ function debug_echo() {
     fi
 }
 
+declare _path=''
+for _path in "$HOME/.local/bin" /usr/local/bin /usr/local/sbin /opt/homebrew/bin /opt/homebrew/sbin; do
+    test -d "$_path" && PATH="$_path:$PATH"
+done
+export PATH
+
 declare -a source_files_dirs=('/etc/profile')
 # on Arch Linux, /etc/profile actually sources /etc/profile.d
 if [[ "$(uname -s)" != 'Linux' ]]; then
     source_files_dirs+=('/etc/profile.d')
 fi
-source_files_dirs+=('/usr/local/etc/profile.d')
-source_files_dirs+=("$HOME/.local/share/bash")
-declare -x BASH_COMPLETION_COMPAT_DIR='/usr/local/etc/bash_completion.d' # to be able to use /usr/local/etc/bash_completion.d
+
+declare _dir=''
+for _dir in /opt/homebrew/etc/profile.d /usr/local/etc/profile.d "$HOME/.local/share/bash"; do
+    test -d "$_dir" && source_files_dirs+=( "$_dir" )
+done
+for _dir in /{opt/homebrew,usr/local}/etc/bash_completion.d; do
+    if test -d "$_dir"; then
+        declare -x BASH_COMPLETION_COMPAT_DIR="$_dir"
+        break
+    fi
+done
 for source_file_dir in "${source_files_dirs[@]}"; do
     if test -f "$source_file_dir"; then
         debug_echo "Sourcing $source_file_dir"

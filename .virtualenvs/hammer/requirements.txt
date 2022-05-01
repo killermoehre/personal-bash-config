@@ -1,5 +1,6 @@
 pip
 wheel
+python-cinderclient
 git+ssh://git@github.wdf.sap.corp/tg17/hammer#egg=hammer
 git+ssh://git@github.wdf.sap.corp/tg17/hammer-ext-volumechecker#egg=hammer-ext-volumechecker
 git+ssh://git@github.wdf.sap.corp/d042639/hammer-ext-volumetools#egg=hammer-ext-volumetools
