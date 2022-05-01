@@ -49,6 +49,14 @@
 			<key>on</key>
 			<integer>1</integer>
 			<key>replace</key>
+			<string>omw</string>
+			<key>with</key>
+			<string>On my way!</string>
+		</dict>
+		<dict>
+			<key>on</key>
+			<integer>1</integer>
+			<key>replace</key>
 			<string>vlg</string>
 			<key>with</key>
 			<string>Viele liebe Grüße!</string>

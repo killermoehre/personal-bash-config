@@ -2,7 +2,7 @@
 
 declare _file=""
 printf 'Running yadm bootstrap\n'
-export PATH="/usr/local/bin:/usr/sbin:/sbin:$PATH"
+export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/sbin:/sbin:$PATH"
 export SSH_AUTH_SOCK="$HOME/.gnupg/S.gpg-agent.ssh"
 for _file in "$HOME/.config/yadm/bootstrap.d/"*; do
     test -x "$_file" || continue
