@@ -135,7 +135,7 @@
 		<key>162</key>
 		<dict>
 			<key>enabled</key>
-			<true/>
+			<false/>
 			<key>value</key>
 			<dict>
 				<key>parameters</key>
@@ -646,7 +646,7 @@
 		<key>59</key>
 		<dict>
 			<key>enabled</key>
-			<true/>
+			<false/>
 			<key>value</key>
 			<dict>
 				<key>parameters</key>
@@ -694,7 +694,7 @@
 		<key>64</key>
 		<dict>
 			<key>enabled</key>
-			<true/>
+			<false/>
 			<key>value</key>
 			<dict>
 				<key>parameters</key>
@@ -710,7 +710,7 @@
 		<key>65</key>
 		<dict>
 			<key>enabled</key>
-			<true/>
+			<false/>
 			<key>value</key>
 			<dict>
 				<key>parameters</key>
