@@ -1,5 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict/>
+<dict>
+	<key>CKDPIDSyncState</key>
+	<integer>0</integer>
+	<key>adprivacydMaxSegmentSendInterval</key>
+	<string>259200</string>
+	<key>adprivacydSegmentInterval</key>
+	<string>60160</string>
+	<key>allowApplePersonalizedAdvertising</key>
+	<true/>
+	<key>allowIdentifierForAdvertising</key>
+	<true/>
+	<key>personalizedAdsMigrated</key>
+	<true/>
+</dict>
 </plist>

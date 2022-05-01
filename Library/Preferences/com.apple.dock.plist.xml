@@ -2,8 +2,24 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>autohide</key>
+	<false/>
+	<key>largesize</key>
+	<real>128</real>
+	<key>last-analytics-stamp</key>
+	<array>
+		<real>673106745.38680696</real>
+	</array>
+	<key>launchanim</key>
+	<false/>
+	<key>loc</key>
+	<string>de_DE:DE</string>
+	<key>magnification</key>
+	<false/>
 	<key>mod-count</key>
-	<integer>27</integer>
+	<integer>32</integer>
+	<key>orientation</key>
+	<string>left</string>
 	<key>persistent-apps</key>
 	<array>
 		<dict>
@@ -51,7 +67,7 @@
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>159613308514688</integer>
+				<integer>57938548109656</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -60,159 +76,17 @@
 	<key>persistent-others</key>
 	<array/>
 	<key>recent-apps</key>
-	<array>
-		<dict>
-			<key>GUID</key>
-			<integer>1424801511</integer>
-			<key>tile-data</key>
-			<dict>
-				<key>book</key>
-				<data>
-				Ym9vaywCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
-				AAAAAAAAAAAAAAAAAAAATAEAAAQAAAADAwAAAAAAIAwA
-				AAABAQAAQXBwbGljYXRpb25zCgAAAAEBAABNYWNWaW0u
-				YXBwAAAIAAAAAQYAABAAAAAkAAAACAAAAAQDAABZ/L4Q
-				AAAAAAgAAAAEAwAAC/9UDwAAAAAIAAAAAQYAAEgAAABY
-				AAAACAAAAAAEAABBw39WDQAAABgAAAABAgAAAgAAAAAA
-				AAAPAAAAAAAAAAAAAAAAAAAACAAAAAEJAABmaWxlOi8v
-				LwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAUAZe
-				OgAAAAgAAAAABAAAQcP3ezSAAAAkAAAAAQEAADVDMUYz
-				N0MxLTE3QTItNEMwMC1COURBLUQ5N0FEMDIyQTI2RRgA
-				AAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAA
-				AAEBAAAvAAAAAAAAAAEFAACoAAAA/v///wEAAAAAAAAA
-				DQAAAAQQAAA4AAAAAAAAAAUQAABoAAAAAAAAABAQAACI
-				AAAAAAAAAEAQAAB4AAAAAAAAAAIgAAA4AQAAAAAAAAUg
-				AACoAAAAAAAAABAgAAC4AAAAAAAAABEgAADsAAAAAAAA
-				ABIgAADMAAAAAAAAABMgAADcAAAAAAAAACAgAAAYAQAA
-				AAAAADAgAABEAQAAAAAAABDQAAAEAAAAAAAAAA==
-				</data>
-				<key>bundle-identifier</key>
-				<string>org.vim.MacVim</string>
-				<key>dock-extra</key>
-				<false/>
-				<key>file-data</key>
-				<dict>
-					<key>_CFURLString</key>
-					<string>file:///Applications/MacVim.app/</string>
-					<key>_CFURLStringType</key>
-					<integer>15</integer>
-				</dict>
-				<key>file-label</key>
-				<string>MacVim</string>
-				<key>file-mod-date</key>
-				<integer>3715376410</integer>
-				<key>file-type</key>
-				<integer>1</integer>
-				<key>is-beta</key>
-				<false/>
-				<key>parent-mod-date</key>
-				<integer>159613308514688</integer>
-			</dict>
-			<key>tile-type</key>
-			<string>file-tile</string>
-		</dict>
-		<dict>
-			<key>GUID</key>
-			<integer>1424801513</integer>
-			<key>tile-data</key>
-			<dict>
-				<key>book</key>
-				<data>
-				Ym9va0gCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
-				AAAAAAAAAAAAAAAAAAAAaAEAAAQAAAADAwAAAAAAIAYA
-				AAABAQAAU3lzdGVtAAAMAAAAAQEAAEFwcGxpY2F0aW9u
-				cw0AAAABAQAAQXBwIFN0b3JlLmFwcAAAAAwAAAABBgAA
-				EAAAACAAAAA0AAAACAAAAAQDAAAVAAAA////DwgAAAAE
-				AwAAFwAAAP///w8IAAAABAMAABoAAAD///8PDAAAAAEG
-				AABgAAAAcAAAAIAAAAAIAAAAAAQAAEHD93s0gAAAGAAA
-				AAECAAACAAAAAAAAAA8AAAAAAAAAAAAAAAAAAAAIAAAA
-				AQkAAGZpbGU6Ly8vDAAAAAEBAABNYWNpbnRvc2ggSEQI
-				AAAABAMAAABQBl46AAAAJAAAAAEBAAA1QzFGMzdDMS0x
-				N0EyLTRDMDAtQjlEQS1EOTdBRDAyMkEyNkUYAAAAAQIA
-				AIEAAAABAAAA7xMAAAEAAAAAAAAAAAAAAAEAAAABAQAA
-				LwAAAAAAAAABBQAAqAAAAP7///8BAAAAAAAAAA0AAAAE
-				EAAATAAAAAAAAAAFEAAAkAAAAAAAAAAQEAAAtAAAAAAA
-				AABAEAAApAAAAAAAAAACIAAAVAEAAAAAAAAFIAAA1AAA
-				AAAAAAAQIAAA5AAAAAAAAAARIAAACAEAAAAAAAASIAAA
-				+AAAAAAAAAATIAAApAAAAAAAAAAgIAAANAEAAAAAAAAw
-				IAAAYAEAAAAAAAAQ0AAABAAAAAAAAAA=
-				</data>
-				<key>bundle-identifier</key>
-				<string>com.apple.AppStore</string>
-				<key>dock-extra</key>
-				<true/>
-				<key>file-data</key>
-				<dict>
-					<key>_CFURLString</key>
-					<string>file:///System/Applications/App%20Store.app/</string>
-					<key>_CFURLStringType</key>
-					<integer>15</integer>
-				</dict>
-				<key>file-label</key>
-				<string>App Store</string>
-				<key>file-mod-date</key>
-				<integer>3731124073</integer>
-				<key>file-type</key>
-				<integer>1</integer>
-				<key>is-beta</key>
-				<false/>
-				<key>parent-mod-date</key>
-				<integer>3731124073</integer>
-			</dict>
-			<key>tile-type</key>
-			<string>file-tile</string>
-		</dict>
-		<dict>
-			<key>GUID</key>
-			<integer>1424801514</integer>
-			<key>tile-data</key>
-			<dict>
-				<key>book</key>
-				<data>
-				Ym9vaywCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
-				AAAAAAAAAAAAAAAAAAAATAEAAAQAAAADAwAAAAAAIAwA
-				AAABAQAAQXBwbGljYXRpb25zCQAAAAEBAABTbGFjay5h
-				cHAAAAAIAAAAAQYAABAAAAAkAAAACAAAAAQDAABZ/L4Q
-				AAAAAAgAAAAEAwAAinjhEAAAAAAIAAAAAQYAAEgAAABY
-				AAAACAAAAAAEAABBxAiDMAAAABgAAAABAgAAAgAAAAAA
-				AAAPAAAAAAAAAAAAAAAAAAAACAAAAAEJAABmaWxlOi8v
-				LwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQDAAAAUAZe
-				OgAAAAgAAAAABAAAQcP3ezSAAAAkAAAAAQEAADVDMUYz
-				N0MxLTE3QTItNEMwMC1COURBLUQ5N0FEMDIyQTI2RRgA
-				AAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAAAAAAAQAA
-				AAEBAAAvAAAAAAAAAAEFAACoAAAA/v///wEAAAAAAAAA
-				DQAAAAQQAAA4AAAAAAAAAAUQAABoAAAAAAAAABAQAACI
-				AAAAAAAAAEAQAAB4AAAAAAAAAAIgAAA4AQAAAAAAAAUg
-				AACoAAAAAAAAABAgAAC4AAAAAAAAABEgAADsAAAAAAAA
-				ABIgAADMAAAAAAAAABMgAADcAAAAAAAAACAgAAAYAQAA
-				AAAAADAgAABEAQAAAAAAABDQAAAEAAAAAAAAAA==
-				</data>
-				<key>bundle-identifier</key>
-				<string>com.tinyspeck.slackmacgap</string>
-				<key>dock-extra</key>
-				<false/>
-				<key>file-data</key>
-				<dict>
-					<key>_CFURLString</key>
-					<string>file:///Applications/Slack.app/</string>
-					<key>_CFURLStringType</key>
-					<integer>15</integer>
-				</dict>
-				<key>file-label</key>
-				<string>Slack</string>
-				<key>file-mod-date</key>
-				<integer>68319484064088</integer>
-				<key>file-type</key>
-				<integer>1</integer>
-				<key>is-beta</key>
-				<false/>
-				<key>parent-mod-date</key>
-				<integer>57938548109656</integer>
-			</dict>
-			<key>tile-type</key>
-			<string>file-tile</string>
-		</dict>
-	</array>
+	<array/>
+	<key>region</key>
+	<string>DE</string>
+	<key>show-process-indicators</key>
+	<true/>
+	<key>show-recents</key>
+	<false/>
+	<key>tilesize</key>
+	<real>128</real>
+	<key>trash-full</key>
+	<true/>
 	<key>version</key>
 	<integer>1</integer>
 </dict>
