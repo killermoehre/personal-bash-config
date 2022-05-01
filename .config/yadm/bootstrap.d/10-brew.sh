@@ -17,5 +17,4 @@ if [ "$system_type" = "Darwin" ]; then
     echo "Updating homebrew bundle"
     brew bundle --global
   fi
-  brew link python3
 fi
