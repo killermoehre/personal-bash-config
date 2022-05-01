@@ -1,3 +1,5 @@
+pip
+wheel
 pytest-testinfra
 pytest-xdist
 paramiko
