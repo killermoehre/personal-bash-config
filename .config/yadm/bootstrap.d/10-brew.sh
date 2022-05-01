@@ -15,7 +15,7 @@ if [ "$system_type" = "Darwin" ]; then
 
   if [ -f "$HOME/.Brewfile" ]; then
     echo "Updating homebrew bundle"
-    /usr/local/bin/brew bundle --global
+    brew bundle --global
   fi
-  /usr/local/bin/brew link python3
+  brew link python3
 fi
