@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/usr/bin/env bash
 
 mkdir -p "$HOME/.local/lib/"
 pushd "$HOME/.local/lib" || exit 1
