@@ -1,6 +1,6 @@
 # see https://github.wdf.sap.corp/tg17/ccloud_multitool/blob/master/example.config
 username: c5219583
-ccloud_secrets_repo: ~/development/ccee-secrets
+ccloud_secrets_repo: ~/development/secrets
 default_ci_team: 'image'
 default_domain: monsoon3
 default_namespace: monsoon3

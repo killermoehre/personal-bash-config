@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
 
-if test -d "$HOME/development/ccee-secrets"; then
-    git -C "$HOME/development/ccee-secrets" pull
+if test -d "$HOME/development/secrets"; then
+    git -C "$HOME/development/secrets" pull
 else
-    git clone git@github.wdf.sap.corp:cc/secrets.git "$HOME/development/ccee-secrets"
+    git clone git@github.wdf.sap.corp:cc/secrets.git "$HOME/development/secrets"
 fi
 if test -d "$HOME/development/chrome-extensions"; then
     git -C "$HOME/development/chrome-extensions" pull
