@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AKLastEmailListRequestDateKey</key>
-	<date>2022-05-01T11:36:17Z</date>
+	<date>2022-05-02T04:31:43Z</date>
 	<key>AKLastIDMSEnvironment</key>
 	<integer>0</integer>
 	<key>AppleAccentColor</key>
@@ -81,7 +81,7 @@
 		</dict>
 	</array>
 	<key>_HIHideMenuBar</key>
-	<false/>
+	<true/>
 	<key>com.apple.finder.SyncExtensions</key>
 	<dict>
 		<key>collaborationMap</key>
@@ -90,6 +90,8 @@
 		<dict/>
 	</dict>
 	<key>com.apple.sound.beep.flash</key>
+	<integer>0</integer>
+	<key>com.apple.sound.uiaudio.enabled</key>
 	<integer>0</integer>
 	<key>com.apple.springing.delay</key>
 	<real>0.5</real>

@@ -16,6 +16,8 @@
 	<string>de_DE:DE</string>
 	<key>magnification</key>
 	<false/>
+	<key>mineffect</key>
+	<string>scale</string>
 	<key>minimize-to-application</key>
 	<false/>
 	<key>mod-count</key>
