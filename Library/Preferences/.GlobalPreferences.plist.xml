@@ -47,6 +47,13 @@
 		<string>en</string>
 		<string>de</string>
 	</array>
+	<key>NSNavRecentPlaces</key>
+	<array>
+		<string>~/development/chrome-extensions/supernovaFlexRegions</string>
+		<string>~/development/chrome-extensions/etherpadHelper</string>
+		<string>~/development/chrome-extensions/snowHelper</string>
+		<string>~/development/chrome-extensions/msdPolli</string>
+	</array>
 	<key>NSPreferredWebServices</key>
 	<dict>
 		<key>NSWebServicesProviderWebSearch</key>
