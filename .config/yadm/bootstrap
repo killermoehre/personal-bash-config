@@ -1,12 +1,17 @@
 #!/bin/bash
 
+set -euo pipefail
+
+declare BOOTSTRAP_D="${BASH_SOURCE[0]}.d"
+
 declare _file=""
 printf 'Running yadm bootstrap\n'
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/sbin:/sbin:$PATH"
 export SSH_AUTH_SOCK="$HOME/.gnupg/S.gpg-agent.ssh"
-for _file in "$HOME/.config/yadm/bootstrap.d/"*; do
+for _file in "$BOOTSTRAP_D"*; do
     test -x "$_file" || continue
-    [[ "$_file" = *~ ]] && continue
+    [[ "$_file" =~ "##" ]] && continue
+    [[ "$_file" =~ "~$" ]] && continue
     printf 'Executing %s\n' "$_file"
     "$_file"
 done
