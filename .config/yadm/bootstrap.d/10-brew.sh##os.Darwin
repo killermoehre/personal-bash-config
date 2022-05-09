@@ -29,5 +29,5 @@ done
 declare _dir=''
 for _dir in /Applications /opt/homebrew; do
     printf 'Removing quarantine flags in %s\n' "$_dir"
-    xattr -r -d com.apple.quarantine "$_dir" 2> /dev/null
+    xattr -r -d com.apple.quarantine "$_dir" 2> /dev/null || true
 done
