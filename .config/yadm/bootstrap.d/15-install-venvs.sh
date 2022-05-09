@@ -17,7 +17,7 @@ for _requirements_txt in *"/requirements.txt"; do
     fi
     _venv="${_requirements_txt%%requirements.txt}"
     printf 'Creating/upgrading %s/%s' "$PWD" "$_venv"
-    python3 -m venv --upgrade --upgrade-deps "$_venv"
+    python3 -m venv --upgrade "$_venv"
     export VIRTUAL_ENV="$PWD/$_venv"
     "$VIRTUAL_ENV/bin/python3" -m pip install --upgrade --upgrade-strategy eager pip wheel
     "$VIRTUAL_ENV/bin/python3" -m pip install --upgrade --upgrade-strategy eager -r "$VIRTUAL_ENV/requirements.txt"
