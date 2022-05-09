@@ -1,2 +1,2 @@
 #!/bash
-alias limesctl='OS_PASSWORD="$(security find-generic-password -s Exchange -w)" limesctl'
+alias limesctl='OS_PASSWORD="$(security find-generic-password -s com.jamfsoftware.SelfService.credentials -w )" limesctl'
