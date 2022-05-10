@@ -12,13 +12,43 @@ function debug_echo() {
     fi
 }
 
-declare _path=''
-for _path in "$HOME/.local/bin" /usr/local/bin /usr/local/sbin /opt/homebrew/bin /opt/homebrew/sbin; do
-    test -d "$_path" && PATH="$_path:$PATH"
+declare -a _paths=''
+
+for _path in "$HOME/.local/bin" /opt/homebrew/bin /opt/homebrew/sbin; do
+    test -d "$_path" && _paths+=("$_path")
+done
+
+# macos has some fancy ways of declaring new paths
+if test -e /etc/paths; then
+    while read -r _path; do
+        test -d "$_path" && _paths+=("$_path")
+    done < /etc/paths
+fi
+for _file in /etc/paths.d/*; do
+    while read -r _path; do
+        test -d "$_path" && _paths+=("$_path")
+    done < "$_file"
+done
+
+unset PATH
+for _path in "${_paths[@]}"; do
+    if test ! -v PATH; then
+        declare PATH="$_path"
+    elif test -z "$PATH"; then
+        PATH="$_path"
+    else
+        PATH="$PATH:$_path"
+    fi
 done
 export PATH
 
-declare -a source_files_dirs=('/etc/profile')
+declare -a source_files_dirs=()
+
+# on macos, /etc/profile does weird $PATH stuff
+if [[ "$(uname -s)" != 'Darwin' ]]; then
+    source_files_dirs+=('/etc/profile')
+fi
+
 # on Arch Linux, /etc/profile actually sources /etc/profile.d
 if [[ "$(uname -s)" != 'Linux' ]]; then
     source_files_dirs+=('/etc/profile.d')
@@ -34,6 +64,7 @@ for _dir in /{opt/homebrew,usr/local}/etc/bash_completion.d; do
         break
     fi
 done
+
 for source_file_dir in "${source_files_dirs[@]}"; do
     if test -f "$source_file_dir"; then
         debug_echo "Sourcing $source_file_dir"
