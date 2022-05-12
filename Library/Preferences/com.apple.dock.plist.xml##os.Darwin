@@ -8,8 +8,10 @@
 	<real>128</real>
 	<key>last-analytics-stamp</key>
 	<array>
-		<real>673134337.82784903</real>
+		<real>673531278.19908798</real>
 	</array>
+	<key>lastShowIndicatorTime</key>
+	<real>673529699.09275305</real>
 	<key>launchanim</key>
 	<false/>
 	<key>loc</key>
@@ -21,7 +23,7 @@
 	<key>minimize-to-application</key>
 	<false/>
 	<key>mod-count</key>
-	<integer>34</integer>
+	<integer>36</integer>
 	<key>orientation</key>
 	<string>left</string>
 	<key>persistent-apps</key>
@@ -79,13 +81,17 @@
 	</array>
 	<key>persistent-others</key>
 	<array/>
-	<key>recent-apps</key>
-	<array/>
 	<key>region</key>
 	<string>DE</string>
 	<key>show-process-indicators</key>
 	<true/>
 	<key>show-recents</key>
+	<false/>
+	<key>showAppExposeGestureEnabled</key>
+	<false/>
+	<key>showDesktopGestureEnabled</key>
+	<false/>
+	<key>showLaunchpadGestureEnabled</key>
 	<false/>
 	<key>tilesize</key>
 	<real>128</real>

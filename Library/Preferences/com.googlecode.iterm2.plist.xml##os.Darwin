@@ -2,6 +2,8 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>AlternateMouseScroll</key>
+	<true/>
 	<key>AppleAntiAliasingThreshold</key>
 	<integer>1</integer>
 	<key>ApplePressAndHoldEnabled</key>
@@ -12,12 +14,18 @@
 	<integer>1</integer>
 	<key>AppleWindowTabbingMode</key>
 	<string>manual</string>
+	<key>BracketedPasteMode</key>
+	<true/>
 	<key>Command</key>
 	<string>/usr/local/bin/bash</string>
+	<key>ConvertDosNewlines</key>
+	<true/>
 	<key>Default Bookmark Guid</key>
 	<string>1224F37B-1699-4AD5-B0C8-909EA23422B0</string>
 	<key>EnableAPIServer</key>
 	<true/>
+	<key>EscapeShellCharsWithBackslash</key>
+	<false/>
 	<key>HapticFeedbackForEsc</key>
 	<false/>
 	<key>HotkeyMigratedFromSingleToMulti</key>
@@ -53,7 +61,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>-250 -248 800 448 0 0 1920 1080 </string>
 	<key>NSWindow Frame ProfilesPanel</key>
-	<string>570 293 735 388 0 0 1920 1080 </string>
+	<string>478 295 735 388 0 0 1728 1085 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 579 730 500 0 0 1728 1085 </string>
 	<key>New Bookmarks</key>
@@ -61,6 +69,8 @@
 		<dict>
 			<key>ASCII Anti Aliased</key>
 			<true/>
+			<key>ASCII Ligatures</key>
+			<false/>
 			<key>Allow Title Reporting</key>
 			<true/>
 			<key>Allow modifyOtherKeys</key>
@@ -1511,9 +1521,9 @@
 	<key>NoSyncFrame_SharedPreferences</key>
 	<dict>
 		<key>screenFrame</key>
-		<string>{{0, 0}, {1920, 1080}}</string>
+		<string>{{0, 0}, {1728, 1117}}</string>
 		<key>topLeft</key>
-		<string>{372, 983}</string>
+		<string>{402, 795}</string>
 	</dict>
 	<key>NoSyncIgnoreSystemWindowRestoration</key>
 	<true/>
@@ -2545,6 +2555,12 @@
 	<true/>
 	<key>NoSyncTipOfTheDayEligibilityBeganTime</key>
 	<real>672770613.64733696</real>
+	<key>PasteSpecialRegex</key>
+	<string></string>
+	<key>PasteSpecialSubstitution</key>
+	<string></string>
+	<key>PasteSpecialUseRegexSubstitution</key>
+	<false/>
 	<key>PointerActions</key>
 	<dict>
 		<key>Button,1,1,,</key>
@@ -2588,6 +2604,8 @@
 	<true/>
 	<key>SUSendProfileInfo</key>
 	<false/>
+	<key>ShowFullScreenTabBar</key>
+	<true/>
 	<key>SoundForEsc</key>
 	<false/>
 	<key>StatusBarPosition</key>
@@ -2603,7 +2621,7 @@
 	<key>iTerm Version</key>
 	<string>3.4.15</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
-	<integer>0</integer>
+	<integer>7</integer>
 	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
 	<false/>
 </dict>
