@@ -4,28 +4,27 @@
 <dict>
 	<key>AutoSelectCertificateForUrls</key>
 	<array>
-		<string>'{'pattern':'[*.]sap.corp','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]corp.sap','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]int.sap','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]sapbrandtools.com','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]sapjam.com','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]successfactors.eu','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]transferbooker.org','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]bss.net.sap','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]successfactors.com','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]cloud.sap','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]only.sap','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]global.corp.sap','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]devsys.net.sap','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]net.sap','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]sap.com','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]mymeetingroom.com','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]sap-ag.de','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]hana.ondemand.com','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]wdf.sap.corp','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]sapbydesign.com','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>'{'pattern':'[*.]ondemand.com','filter':{'ISSUER':{'CN':'SAP SSO CA G2'}}}'</string>
-		<string>{"pattern":"https://[*.]my.domain:8090","filter":{"ISSUER":{"CN":"example.com"}}}</string>
+		<string>{"pattern":"[*.]sap.corp","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]corp.sap","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]int.sap","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]sapbrandtools.com","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]sapjam.com","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]successfactors.eu","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]transferbooker.org","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]bss.net.sap","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]successfactors.com","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]cloud.sap","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]only.sap","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]global.corp.sap","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]devsys.net.sap","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]net.sap","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]sap.com","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]mymeetingroom.com","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]sap-ag.de","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]hana.ondemand.com","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]wdf.sap.corp","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]sapbydesign.com","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
+		<string>{"pattern":"[*.]ondemand.com","filter":{"ISSUER":{"CN":"SAP SSO CA G2"}}}</string>
 	</array>
 	<key>DeveloperIDCertificateReauthorizeWinter20212022Attempts</key>
 	<integer>1</integer>
