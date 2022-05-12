@@ -1,3 +1,15 @@
-pip
-wheel
+black
+isort
 jupyterlab
+jupyterlab-git
+jupyterlab-lsp
+jupyterlab_code_formatter
+jupyterlab_github
+pip
+python-keystoneclient
+python-lsp-server[all]
+python-swiftclient
+rich[jupyter]
+sgqlc
+sgqlc_schemas
+wheel
