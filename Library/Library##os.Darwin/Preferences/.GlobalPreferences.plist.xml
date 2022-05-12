@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>AKLastEmailListRequestDateKey</key>
-	<date>2022-05-02T04:31:43Z</date>
+	<date>2022-05-03T04:29:15Z</date>
 	<key>AKLastIDMSEnvironment</key>
 	<integer>0</integer>
 	<key>AppleAccentColor</key>
@@ -36,7 +36,7 @@
 	<key>NSLinguisticDataAssetsRequestLastInterval</key>
 	<real>86400</real>
 	<key>NSLinguisticDataAssetsRequestTime</key>
-	<date>2022-05-01T11:37:05Z</date>
+	<date>2022-05-02T11:37:11Z</date>
 	<key>NSLinguisticDataAssetsRequested</key>
 	<array>
 		<string>de</string>
