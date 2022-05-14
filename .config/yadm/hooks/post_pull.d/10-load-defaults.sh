@@ -1,5 +1,7 @@
 #!/bin/bash
 
+test -d "$HOME/Library/Preferences" || exit 0
+
 declare _plist=""
 find "$HOME/Library/Preferences" -name '*.xml' -print | while read -r _plist; do
     _domain_name="${_plist%.plist.xml}"

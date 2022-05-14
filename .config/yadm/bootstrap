@@ -3,13 +3,13 @@
 set -euo pipefail
 
 declare -x SSH_AUTH_SOCK=''
-SSH_AUTH_SOCK="$(gpgconf -L agent-ssh-socket)"
-declare BOOTSTRAP_D="${BASH_SOURCE[0]}.d"
+declare _exec_dir="${0}.d"
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/sbin:/sbin:$PATH"
+SSH_AUTH_SOCK="$(gpgconf -L agent-ssh-socket)"
 
 declare _file=""
-printf 'Running yadm bootstrap\n'
-for _file in "$BOOTSTRAP_D"/*; do
+printf 'Running %s\n' "$0"
+for _file in "$_exec_dir"/*; do
     test -x "$_file" || continue
     [[ "$_file" = *##* ]] && continue
     [[ "$_file" = *~ ]] && continue

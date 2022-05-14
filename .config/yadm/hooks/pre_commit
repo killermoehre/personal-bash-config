@@ -1,8 +1,1 @@
-#!/bin/bash
-
-declare _file=""
-for _file in "$HOME/.config/yadm/hooks/pre_commit.d/"*; do
-    test -x "$_file" || continue
-    printf 'Executing %s\n' "$_file"
-    . "$_file"
-done
+../bootstrap
