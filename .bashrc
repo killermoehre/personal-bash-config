@@ -24,11 +24,13 @@ if test -e /etc/paths; then
         test -d "$_path" && _paths+=("$_path")
     done < /etc/paths
 fi
-for _file in /etc/paths.d/*; do
-    while read -r _path; do
-        test -d "$_path" && _paths+=("$_path")
-    done < "$_file"
-done
+if test -d /etc/paths.d; then
+    for _file in /etc/paths.d/*; do
+        while read -r _path; do
+            test -d "$_path" && _paths+=("$_path")
+        done < "$_file"
+    done
+fi
 
 unset PATH
 for _path in "${_paths[@]}"; do
@@ -44,15 +46,16 @@ export PATH
 
 declare -a source_files_dirs=()
 
-# on macos, /etc/profile does weird $PATH stuff
-if [[ "$(uname -s)" != 'Darwin' ]]; then
-    source_files_dirs+=('/etc/profile')
-fi
-
-# on Arch Linux, /etc/profile actually sources /etc/profile.d
-if [[ "$(uname -s)" != 'Linux' ]]; then
-    source_files_dirs+=('/etc/profile.d')
-fi
+case "$(/usr/bin/uname -s)" in
+    # on macos, /etc/profile does weird $PATH stuff
+    'Linux')
+        source_files_dirs+=('/etc/profile')
+        ;;
+    # on Arch Linux, /etc/profile actually sources /etc/profile.d
+    'Darwin')
+        source_files_dirs+=('/etc/profile.d')
+        ;;
+esac
 
 declare _dir=''
 for _dir in /opt/homebrew/etc/profile.d /usr/local/etc/profile.d "$HOME/.local/share/bash"; do
