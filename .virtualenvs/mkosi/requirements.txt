@@ -1,3 +1,0 @@
-pip
-wheel
-git+https://github.com/systemd/mkosi.git
