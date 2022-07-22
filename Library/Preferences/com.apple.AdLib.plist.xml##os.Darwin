@@ -7,7 +7,7 @@
 	<key>adprivacydMaxSegmentSendInterval</key>
 	<string>259200</string>
 	<key>adprivacydSegmentInterval</key>
-	<string>91258</string>
+	<string>116842</string>
 	<key>allowApplePersonalizedAdvertising</key>
 	<false/>
 	<key>allowIdentifierForAdvertising</key>

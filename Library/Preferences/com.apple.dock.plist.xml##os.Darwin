@@ -8,10 +8,10 @@
 	<real>128</real>
 	<key>last-analytics-stamp</key>
 	<array>
-		<real>673531278.19908798</real>
+		<real>679919848.647717</real>
 	</array>
 	<key>lastShowIndicatorTime</key>
-	<real>673529699.09275305</real>
+	<real>679915251.500615</real>
 	<key>launchanim</key>
 	<false/>
 	<key>loc</key>
@@ -80,6 +80,8 @@
 		</dict>
 	</array>
 	<key>persistent-others</key>
+	<array/>
+	<key>recent-apps</key>
 	<array/>
 	<key>region</key>
 	<string>DE</string>

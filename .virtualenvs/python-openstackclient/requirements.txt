@@ -12,4 +12,4 @@ python-novaclient
 python-octaviaclient
 python-swiftclient
 python-barbicanclient
-git+ssh://git@github.wdf.sap.corp/tg17/os-client#egg=os_client
+git+https://github.wdf.sap.corp/tg17/os-client.git#egg=os_client

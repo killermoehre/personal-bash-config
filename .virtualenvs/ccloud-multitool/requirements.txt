@@ -1,3 +1,3 @@
 wheel
 pip
-git+ssh://git@github.wdf.sap.corp/tg17/ccloud_multitool.git
+git+https://github.wdf.sap.corp/tg17/ccloud_multitool.git

@@ -42,7 +42,8 @@ if has("gui_running")
     if has("gui_gtk2") || has("gui_gtk3")
         set guifont=xos4\ Terminus\ 10
     elseif has("gui_macvim")
-        set guifont=TerminusTTF:h16
+        set guifont=CascadiaCodePL-Regular:h14
+        set macligatures
     elseif has("gui_win32")
         set guifont=Consolas:h11:cANSI
     endif
@@ -50,7 +51,7 @@ endif
 
 set laststatus=2
 set showtabline=2
-set noshowmode
+set showmode
 
 set modeline
 set tabstop=4

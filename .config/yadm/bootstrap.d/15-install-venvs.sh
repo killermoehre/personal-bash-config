@@ -10,18 +10,26 @@ if test -x /usr/sbin/scutil; then
     fi
 fi
 
+declare -a pip_options=("-m" "pip" "--quiet" "--quiet" "install" "--upgrade" "--upgrade-strategy" "eager")
 for _requirements_txt in *"/requirements.txt"; do
     # skip venvs requiring VPN access
     if ((_vpn_connected == 1)) && grep -q -E '(github.wdf.sap.corp|github.tools.sap)' "$_requirements_txt"; then
         continue
     fi
-    _venv="${_requirements_txt%%requirements.txt}"
-    printf 'Creating/upgrading %s/%s' "$PWD" "$_venv"
+    {
+    _venv="${_requirements_txt%%/requirements.txt}"
+    printf 'Creating/upgrading %s/%s\n' "$PWD" "$_venv"
     python3 -m venv --upgrade "$_venv"
     export VIRTUAL_ENV="$PWD/$_venv"
-    "$VIRTUAL_ENV/bin/python3" -m pip install --upgrade --upgrade-strategy eager pip wheel
-    "$VIRTUAL_ENV/bin/python3" -m pip install --upgrade --upgrade-strategy eager -r "$VIRTUAL_ENV/requirements.txt"
+    "$VIRTUAL_ENV/bin/python3" "${pip_options[@]}" pip wheel
+    "$VIRTUAL_ENV/bin/python3" "${pip_options[@]}" -r "$VIRTUAL_ENV/requirements.txt"
+    if test -e "$VIRTUAL_ENV/optional-requirements.txt"; then
+        # don't fail if optional requirements are not available, i.e. some network is not reachable
+        "$VIRTUAL_ENV/bin/python3" "${pip_options[@]}" -r "$VIRTUAL_ENV/optional-requirements.txt" || true
+    fi
     unset VIRTUAL_ENV
+    } &
 done
 
+wait
 popd || exit 0
