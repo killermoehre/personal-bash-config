@@ -8,7 +8,7 @@
 	<real>128</real>
 	<key>last-analytics-stamp</key>
 	<array>
-		<real>679919848.647717</real>
+		<real>680427385.13112199</real>
 	</array>
 	<key>lastShowIndicatorTime</key>
 	<real>679915251.500615</real>
@@ -23,7 +23,7 @@
 	<key>minimize-to-application</key>
 	<false/>
 	<key>mod-count</key>
-	<integer>36</integer>
+	<integer>40</integer>
 	<key>orientation</key>
 	<string>left</string>
 	<key>persistent-apps</key>
@@ -39,11 +39,11 @@
 				AAAAAAAAAAAAAAAAAAAAUAEAAAQAAAADAwAAAAAAIAwA
 				AAABAQAAQXBwbGljYXRpb25zDgAAAAEBAABQcml2aWxl
 				Z2VzLmFwcAAACAAAAAEGAAAQAAAAJAAAAAgAAAAEAwAA
-				njIKAAAAAAAIAAAABAMAAAAjAQAAAAAACAAAAAEGAABM
+				JXxJAAAAAAAIAAAABAMAAAAjAQAAAAAACAAAAAEGAABM
 				AAAAXAAAAAgAAAAABAAAQcMOOuuAAAAYAAAAAQIAAAIA
 				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAABCQAAZmls
 				ZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAA
-				AFChG3MAAAAIAAAAAAQAAEHD93s0gAAAJAAAAAEBAAAx
+				AFChG3MAAAAIAAAAAAQAAEHEFN/EAAAAJAAAAAEBAAAx
 				MzRDOURBQi0wOTY2LTRGNEEtQkMzNS02RDA4RjI3MzVG
 				ODIYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAA
 				AAEAAAABAQAALwAAAAAAAAABBQAAqAAAAP7///8BAAAA
@@ -73,7 +73,7 @@
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>245456820278016</integer>
+				<integer>220301203858033</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
@@ -98,7 +98,7 @@
 	<key>tilesize</key>
 	<real>128</real>
 	<key>trash-full</key>
-	<false/>
+	<true/>
 	<key>version</key>
 	<integer>1</integer>
 	<key>wvous-br-corner</key>

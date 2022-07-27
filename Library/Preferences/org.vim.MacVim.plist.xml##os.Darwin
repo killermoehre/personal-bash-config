@@ -55,7 +55,7 @@
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
 	<string>594 453 731 432 0 0 1920 1055 </string>
 	<key>NSWindow Frame SUUpdateAlert</key>
-	<string>530 493 620 392 0 0 1680 1050 </string>
+	<string>650 497 620 392 0 0 1920 1055 </string>
 	<key>NSWindow Frame com.apple.typography_panel_CascadiaMonoPL-Regular</key>
 	<string>346 325 260 313 0 0 1920 1055 </string>
 	<key>NSWindow Frame com.apple.typography_panel_TerminusTTF</key>
@@ -84,7 +84,7 @@
 		</dict>
 	</array>
 	<key>SUAutomaticallyUpdate</key>
-	<true/>
+	<false/>
 	<key>SUCheckAtStartup</key>
 	<false/>
 	<key>SUEnableAutomaticChecks</key>
@@ -92,7 +92,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2022-07-22T09:35:53Z</date>
+	<date>2022-07-27T11:57:34Z</date>
 	<key>SUSendProfileInfo</key>
 	<false/>
 	<key>SUUpdateRelaunchingMarker</key>
