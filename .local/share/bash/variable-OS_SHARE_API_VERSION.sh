@@ -1,3 +1,3 @@
 #!/bash
 
-export OS_SHARE_API_VERSION='2.63'
+export OS_SHARE_API_VERSION='2.65'
