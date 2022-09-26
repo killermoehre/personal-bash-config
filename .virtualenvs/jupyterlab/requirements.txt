@@ -1,9 +1,3 @@
-aiohttp
-black
-caldav
-icalendar
-ics
-isort
 jupyterlab
 jupyterlab-drawio
 jupyterlab-fonts
@@ -12,13 +6,7 @@ jupyterlab-lsp
 jupyterlab_code_formatter
 jupyterlab_github
 jupyterlab_theme_solarized_dark
-pdpyras
 pip
-python-keystoneclient
 python-lsp-server[all]
-python-swiftclient
 rich[jupyter]
-sgqlc
-sgqlc_schemas
-webdav4[fsspec]
 wheel

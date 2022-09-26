@@ -1,1 +1,2 @@
 git+https://github.wdf.sap.corp/tg17/pyccloud
+click<8

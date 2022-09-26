@@ -22,13 +22,13 @@ for _requirements_txt in *"/requirements.txt"; do
     python3 -m venv --upgrade "$_venv"
     export VIRTUAL_ENV="$PWD/$_venv"
     "$VIRTUAL_ENV/bin/python3" "${pip_options[@]}" pip wheel
-    "$VIRTUAL_ENV/bin/python3" "${pip_options[@]}" -r "$VIRTUAL_ENV/requirements.txt"
+    pip_options+=('-r' "$VIRTUAL_ENV/requirements.txt")
     if test -e "$VIRTUAL_ENV/optional-requirements.txt"; then
-        # don't fail if optional requirements are not available, i.e. some network is not reachable
-        "$VIRTUAL_ENV/bin/python3" "${pip_options[@]}" -r "$VIRTUAL_ENV/optional-requirements.txt" || true
+        pip_options+=('-r' "$VIRTUAL_ENV/optional-requirements.txt")
     fi
+    "$VIRTUAL_ENV/bin/python3" "${pip_options[@]}"
     unset VIRTUAL_ENV
-    } &
+    }
 done
 
 wait
