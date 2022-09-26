@@ -63,7 +63,7 @@
 	<key>NSWindow Frame ProfilesPanel</key>
 	<string>600 618 735 388 0 0 1920 1080 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>812 -84 1073 964 0 0 1920 1080 </string>
+	<string>811 392 650 450 0 0 1920 1080 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1517,9 +1517,9 @@
 	</array>
 	<key>NoSyncBFPRecents</key>
 	<array>
+		<string>CaskaydiaCove Nerd Font Mono</string>
+		<string>Cascadia Code PL</string>
 		<string>Andale Mono</string>
-		<string>TerminessTTF Nerd Font</string>
-		<string>TerminessTTF Nerd Font Mono</string>
 		<string>Monaco</string>
 	</array>
 	<key>NoSyncCommandHistoryHasEverBeenUsed</key>
@@ -1538,11 +1538,11 @@
 	<key>NoSyncInstallationId</key>
 	<string>D90EB52A-5708-4135-AAC9-BDB45F45356B</string>
 	<key>NoSyncLastOSVersion</key>
-	<string>Version 12.4 (Build 21F79)</string>
+	<string>Version 12.6 (Build 21G115)</string>
 	<key>NoSyncLastSystemPythonVersionRequirement</key>
 	<string>1.17</string>
 	<key>NoSyncLaunchExperienceControllerRunCount</key>
-	<integer>8</integer>
+	<integer>9</integer>
 	<key>NoSyncNextAnnoyanceTime</key>
 	<real>673184226.29628098</real>
 	<key>NoSyncPermissionToShowTip</key>

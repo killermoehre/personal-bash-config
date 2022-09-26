@@ -3,12 +3,12 @@
 <plist version="1.0">
 <dict>
 	<key>BuildVersionStampAsNumber</key>
-	<integer>44436064</integer>
+	<integer>44437088</integer>
 	<key>BuildVersionStampAsString</key>
-	<string>21G83</string>
+	<string>21G115</string>
 	<key>SystemVersionStampAsNumber</key>
-	<integer>201654528</integer>
+	<integer>201719808</integer>
 	<key>SystemVersionStampAsString</key>
-	<string>12.5.1</string>
+	<string>12.6</string>
 </dict>
 </plist>

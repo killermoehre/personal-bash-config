@@ -5,9 +5,9 @@
 	<key>MMAppearanceModeSelection</key>
 	<integer>0</integer>
 	<key>MMAutosaveColumns</key>
-	<integer>213</integer>
+	<integer>219</integer>
 	<key>MMAutosaveRows</key>
-	<integer>65</integer>
+	<integer>63</integer>
 	<key>MMCurrentPreferencePane</key>
 	<string>Advanced</string>
 	<key>MMLastWindowClosedBehavior</key>
