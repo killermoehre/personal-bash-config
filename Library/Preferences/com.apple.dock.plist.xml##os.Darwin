@@ -8,7 +8,7 @@
 	<real>128</real>
 	<key>last-analytics-stamp</key>
 	<array>
-		<real>685886542.46380198</real>
+		<real>686930763.77611601</real>
 	</array>
 	<key>lastShowIndicatorTime</key>
 	<real>685215182.80172801</real>
@@ -23,7 +23,7 @@
 	<key>minimize-to-application</key>
 	<false/>
 	<key>mod-count</key>
-	<integer>45</integer>
+	<integer>47</integer>
 	<key>orientation</key>
 	<string>left</string>
 	<key>persistent-apps</key>
@@ -73,7 +73,166 @@
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>164556829053495</integer>
+				<integer>277656202863826</integer>
+			</dict>
+			<key>tile-type</key>
+			<string>file-tile</string>
+		</dict>
+		<dict>
+			<key>GUID</key>
+			<integer>3171143530</integer>
+			<key>tile-data</key>
+			<dict>
+				<key>book</key>
+				<data>
+				Ym9va3QCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAlAEAAAQAAAADAwAAAAAAIAwA
+				AAABAQAAQXBwbGljYXRpb25zGQAAAAEBAABTb2Z0TWFr
+				ZXIgRnJlZU9mZmljZSAyMDIxAAAAFwAAAAEBAABUZXh0
+				TWFrZXIgRnJlZSAyMDIxLmFwcAAMAAAAAQYAABAAAAAk
+				AAAASAAAAAgAAAAEAwAANwXSAQAAAAAIAAAABAMAAJIf
+				HQIAAAAACAAAAAQDAACTHx0CAAAAAAwAAAABBgAAfAAA
+				AIwAAACcAAAACAAAAAAEAABBw33+GwAAABgAAAABAgAA
+				AgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAEJAABm
+				aWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+				AAAAUKEbcwAAAAgAAAAABAAAQcRbD/2AAAAkAAAAAQEA
+				ADEzNEM5REFCLTA5NjYtNEY0QS1CQzM1LTZEMDhGMjcz
+				NUY4MhgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
+				AAAAAQAAAAEBAAAvAAAAAAAAAAEFAACoAAAA/v///wEA
+				AAAAAAAADQAAAAQQAABoAAAAAAAAAAUQAACsAAAAAAAA
+				ABAQAADQAAAAAAAAAEAQAADAAAAAAAAAAAIgAACAAQAA
+				AAAAAAUgAADwAAAAAAAAABAgAAAAAQAAAAAAABEgAAA0
+				AQAAAAAAABIgAAAUAQAAAAAAABMgAAAkAQAAAAAAACAg
+				AABgAQAAAAAAADAgAACMAQAAAAAAABDQAAAEAAAAAAAA
+				AA==
+				</data>
+				<key>bundle-identifier</key>
+				<string>SoftMaker.TextMakerFree2021</string>
+				<key>dock-extra</key>
+				<false/>
+				<key>file-data</key>
+				<dict>
+					<key>_CFURLString</key>
+					<string>file:///Applications/SoftMaker%20FreeOffice%202021/TextMaker%20Free%202021.app/</string>
+					<key>_CFURLStringType</key>
+					<integer>15</integer>
+				</dict>
+				<key>file-label</key>
+				<string>TextMaker Free 2021</string>
+				<key>file-mod-date</key>
+				<integer>3715200310</integer>
+				<key>file-type</key>
+				<integer>41</integer>
+				<key>is-beta</key>
+				<false/>
+				<key>parent-mod-date</key>
+				<integer>3715200310</integer>
+			</dict>
+			<key>tile-type</key>
+			<string>file-tile</string>
+		</dict>
+		<dict>
+			<key>GUID</key>
+			<integer>3171143531</integer>
+			<key>tile-data</key>
+			<dict>
+				<key>book</key>
+				<data>
+				Ym9va3QCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAlAEAAAQAAAADAwAAAAAAIAwA
+				AAABAQAAQXBwbGljYXRpb25zGQAAAAEBAABTb2Z0TWFr
+				ZXIgRnJlZU9mZmljZSAyMDIxAAAAFwAAAAEBAABQbGFu
+				TWFrZXIgRnJlZSAyMDIxLmFwcAAMAAAAAQYAABAAAAAk
+				AAAASAAAAAgAAAAEAwAANwXSAQAAAAAIAAAABAMAAJIf
+				HQIAAAAACAAAAAQDAABmIR0CAAAAAAwAAAABBgAAfAAA
+				AIwAAACcAAAACAAAAAAEAABBw33+GoAAABgAAAABAgAA
+				AgAAAAAAAAAPAAAAAAAAAAAAAAAAAAAACAAAAAEJAABm
+				aWxlOi8vLwwAAAABAQAATWFjaW50b3NoIEhECAAAAAQD
+				AAAAUKEbcwAAAAgAAAAABAAAQcRbD/2AAAAkAAAAAQEA
+				ADEzNEM5REFCLTA5NjYtNEY0QS1CQzM1LTZEMDhGMjcz
+				NUY4MhgAAAABAgAAgQAAAAEAAADvEwAAAQAAAAAAAAAA
+				AAAAAQAAAAEBAAAvAAAAAAAAAAEFAACoAAAA/v///wEA
+				AAAAAAAADQAAAAQQAABoAAAAAAAAAAUQAACsAAAAAAAA
+				ABAQAADQAAAAAAAAAEAQAADAAAAAAAAAAAIgAACAAQAA
+				AAAAAAUgAADwAAAAAAAAABAgAAAAAQAAAAAAABEgAAA0
+				AQAAAAAAABIgAAAUAQAAAAAAABMgAAAkAQAAAAAAACAg
+				AABgAQAAAAAAADAgAACMAQAAAAAAABDQAAAEAAAAAAAA
+				AA==
+				</data>
+				<key>bundle-identifier</key>
+				<string>SoftMaker.PlanMakerFree2021</string>
+				<key>dock-extra</key>
+				<false/>
+				<key>file-data</key>
+				<dict>
+					<key>_CFURLString</key>
+					<string>file:///Applications/SoftMaker%20FreeOffice%202021/PlanMaker%20Free%202021.app/</string>
+					<key>_CFURLStringType</key>
+					<integer>15</integer>
+				</dict>
+				<key>file-label</key>
+				<string>PlanMaker Free 2021</string>
+				<key>file-mod-date</key>
+				<integer>3715200309</integer>
+				<key>file-type</key>
+				<integer>41</integer>
+				<key>is-beta</key>
+				<false/>
+				<key>parent-mod-date</key>
+				<integer>3715200310</integer>
+			</dict>
+			<key>tile-type</key>
+			<string>file-tile</string>
+		</dict>
+		<dict>
+			<key>GUID</key>
+			<integer>3171143532</integer>
+			<key>tile-data</key>
+			<dict>
+				<key>book</key>
+				<data>
+				Ym9va3gCAAAAAAQQMAAAAAAAAAAAAAAAAAAAAAAAAAAA
+				AAAAAAAAAAAAAAAAAAAAmAEAAAQAAAADAwAAAAAAIAwA
+				AAABAQAAQXBwbGljYXRpb25zGQAAAAEBAABTb2Z0TWFr
+				ZXIgRnJlZU9mZmljZSAyMDIxAAAAGwAAAAEBAABQcmVz
+				ZW50YXRpb25zIEZyZWUgMjAyMS5hcHAADAAAAAEGAAAQ
+				AAAAJAAAAEgAAAAIAAAABAMAADcF0gEAAAAACAAAAAQD
+				AACSHx0CAAAAAAgAAAAEAwAAFCEdAgAAAAAMAAAAAQYA
+				AIAAAACQAAAAoAAAAAgAAAAABAAAQcN9/hqAAAAYAAAA
+				AQIAAAIAAAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAAB
+				CQAAZmlsZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgA
+				AAAEAwAAAFChG3MAAAAIAAAAAAQAAEHEWw/9gAAAJAAA
+				AAEBAAAxMzRDOURBQi0wOTY2LTRGNEEtQkMzNS02RDA4
+				RjI3MzVGODIYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAA
+				AAAAAAAAAAEAAAABAQAALwAAAAAAAAABBQAAqAAAAP7/
+				//8BAAAAAAAAAA0AAAAEEAAAbAAAAAAAAAAFEAAAsAAA
+				AAAAAAAQEAAA1AAAAAAAAABAEAAAxAAAAAAAAAACIAAA
+				hAEAAAAAAAAFIAAA9AAAAAAAAAAQIAAABAEAAAAAAAAR
+				IAAAOAEAAAAAAAASIAAAGAEAAAAAAAATIAAAKAEAAAAA
+				AAAgIAAAZAEAAAAAAAAwIAAAkAEAAAAAAAAQ0AAABAAA
+				AAAAAAA=
+				</data>
+				<key>bundle-identifier</key>
+				<string>SoftMaker.PresentationsFree2021</string>
+				<key>dock-extra</key>
+				<false/>
+				<key>file-data</key>
+				<dict>
+					<key>_CFURLString</key>
+					<string>file:///Applications/SoftMaker%20FreeOffice%202021/Presentations%20Free%202021.app/</string>
+					<key>_CFURLStringType</key>
+					<integer>15</integer>
+				</dict>
+				<key>file-label</key>
+				<string>Presentations Free 2021</string>
+				<key>file-mod-date</key>
+				<integer>3715200309</integer>
+				<key>file-type</key>
+				<integer>41</integer>
+				<key>is-beta</key>
+				<false/>
+				<key>parent-mod-date</key>
+				<integer>3715200310</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>

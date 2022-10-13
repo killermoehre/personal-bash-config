@@ -17,7 +17,7 @@
 	<key>MMRenderer</key>
 	<integer>1</integer>
 	<key>MMTopLeftPoint</key>
-	<string>{65, 1055}</string>
+	<string>{51, 1055}</string>
 	<key>MMUntitledWindow</key>
 	<integer>0</integer>
 	<key>NSFontPanelAttributes</key>

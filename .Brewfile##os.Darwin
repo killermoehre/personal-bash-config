@@ -69,6 +69,7 @@ cask "iterm2"
 cask "libreoffice"
 cask "meld"
 cask "rowanj-gitx"
+cask "softmaker-freeoffice"
 mas "Slack", id: 803453959
 tap "homebrew/bundle"
 tap "homebrew/cask"
