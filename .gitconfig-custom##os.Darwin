@@ -9,23 +9,3 @@
 
 [credential]
     helper = osxkeychain
-
-[diff]
-    tool = meld
-
-[difftool]
-    prompt = false
-
-[difftool "meld"]
-    trustExitCode = true
-
-[merge]
-    tool = meld
-
-[mergetool]
-    prompt = false
-    hideResolved = true
-
-[mergetool "meld"]
-    trustExitCode = true
-    useAutoMerge = auto

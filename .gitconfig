@@ -54,5 +54,18 @@
     addIgnoredFile = false
 [init]
     defaultBranch = main
+[diff]
+    tool = meld
+[difftool]
+    prompt = false
+[difftool "meld"]
+    trustExitCode = true
+[merge]
+    tool = meld
 [mergetool]
+    prompt = false
+    hideResolved = true
     keepBackup = false
+[mergetool "meld"]
+    trustExitCode = true
+    useAutoMerge = auto
