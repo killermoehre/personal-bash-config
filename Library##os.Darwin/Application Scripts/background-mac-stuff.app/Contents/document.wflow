@@ -64,6 +64,8 @@
 					<true/>
 					<key>inputMethod</key>
 					<integer>0</integer>
+					<key>shell</key>
+					<string>/bin/sh</string>
 					<key>source</key>
 					<string></string>
 				</dict>
@@ -167,118 +169,12 @@
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>700.000000:308.000000</string>
+				<string>611.500000:252.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
-			</dict>
-			<key>isViewVisible</key>
-			<integer>1</integer>
-		</dict>
-		<dict>
-			<key>action</key>
-			<dict>
-				<key>AMAccepts</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Optional</key>
-					<true/>
-					<key>Types</key>
-					<array>
-						<string>com.apple.applescript.object</string>
-					</array>
-				</dict>
-				<key>AMActionVersion</key>
-				<string>1.0.2</string>
-				<key>AMApplication</key>
-				<array>
-					<string>Automator</string>
-				</array>
-				<key>AMParameterProperties</key>
-				<dict>
-					<key>source</key>
-					<dict/>
-				</dict>
-				<key>AMProvides</key>
-				<dict>
-					<key>Container</key>
-					<string>List</string>
-					<key>Types</key>
-					<array>
-						<string>com.apple.applescript.object</string>
-					</array>
-				</dict>
-				<key>ActionBundlePath</key>
-				<string>/System/Library/Automator/Run AppleScript.action</string>
-				<key>ActionName</key>
-				<string>AppleScript ausführen</string>
-				<key>ActionParameters</key>
-				<dict>
-					<key>source</key>
-					<string>on run {input, parameters}		quit application "Cisco AnyConnect Secure Mobility Client"		return inputend run</string>
-				</dict>
-				<key>BundleIdentifier</key>
-				<string>com.apple.Automator.RunScript</string>
-				<key>CFBundleVersion</key>
-				<string>1.0.2</string>
-				<key>CanShowSelectedItemsWhenRun</key>
-				<false/>
-				<key>CanShowWhenRun</key>
-				<true/>
-				<key>Category</key>
-				<array>
-					<string>AMCategoryUtilities</string>
-				</array>
-				<key>Class Name</key>
-				<string>RunScriptAction</string>
-				<key>InputUUID</key>
-				<string>846E0A3F-7A18-459F-B783-456CA3B0B0C6</string>
-				<key>Keywords</key>
-				<array>
-					<string>Ausführen</string>
-				</array>
-				<key>OutputUUID</key>
-				<string>582F4B4B-6AEE-42A7-BFA1-300FFE9A10C1</string>
-				<key>UUID</key>
-				<string>DAC03B81-CDA3-425C-BE23-D9FAE534C541</string>
-				<key>UnlocalizedApplications</key>
-				<array>
-					<string>Automator</string>
-				</array>
-				<key>arguments</key>
-				<dict>
-					<key>0</key>
-					<dict>
-						<key>default value</key>
-						<string>on run {input, parameters}
-	
-	(* Your script goes here *)
-	
-	return input
-end run</string>
-						<key>name</key>
-						<string>source</string>
-						<key>required</key>
-						<string>0</string>
-						<key>type</key>
-						<string>0</string>
-						<key>uuid</key>
-						<string>0</string>
-					</dict>
-				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
-				<key>isViewVisible</key>
-				<integer>1</integer>
-				<key>location</key>
-				<string>700.000000:553.000000</string>
-				<key>nibPath</key>
-				<string>/System/Library/Automator/Run AppleScript.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
 			<key>isViewVisible</key>
 			<integer>1</integer>
@@ -337,6 +233,8 @@ end run</string>
 					<true/>
 					<key>inputMethod</key>
 					<integer>0</integer>
+					<key>shell</key>
+					<string>/bin/sh</string>
 					<key>source</key>
 					<string></string>
 				</dict>
@@ -440,12 +338,10 @@ end run</string>
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>700.000000:735.000000</string>
+				<string>611.500000:434.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -506,6 +402,8 @@ end run</string>
 					<true/>
 					<key>inputMethod</key>
 					<integer>0</integer>
+					<key>shell</key>
+					<string>/bin/sh</string>
 					<key>source</key>
 					<string></string>
 				</dict>
@@ -609,12 +507,10 @@ end run</string>
 						<string>4</string>
 					</dict>
 				</dict>
-				<key>conversionLabel</key>
-				<integer>0</integer>
 				<key>isViewVisible</key>
 				<integer>1</integer>
 				<key>location</key>
-				<string>700.000000:917.000000</string>
+				<string>611.500000:616.000000</string>
 				<key>nibPath</key>
 				<string>/System/Library/Automator/Run Shell Script.action/Contents/Resources/Base.lproj/main.nib</string>
 			</dict>
@@ -624,26 +520,19 @@ end run</string>
 	</array>
 	<key>connectors</key>
 	<dict>
-		<key>2CEB8F65-92A6-49F7-A4B2-B9202D5D6232</key>
+		<key>55498A69-AA27-4A19-BF40-A4EEDA41494A</key>
 		<dict>
 			<key>from</key>
 			<string>B55BB6AB-875C-46C7-B79F-D38E9221F8AA - B55BB6AB-875C-46C7-B79F-D38E9221F8AA</string>
 			<key>to</key>
 			<string>DA7DFF35-61B1-402B-AD47-ADD9ACB5EB42 - DA7DFF35-61B1-402B-AD47-ADD9ACB5EB42</string>
 		</dict>
-		<key>4252FDDB-412F-4508-A920-90DA906E675D</key>
-		<dict>
-			<key>from</key>
-			<string>DAC03B81-CDA3-425C-BE23-D9FAE534C541 - DAC03B81-CDA3-425C-BE23-D9FAE534C541</string>
-			<key>to</key>
-			<string>B55BB6AB-875C-46C7-B79F-D38E9221F8AA - B55BB6AB-875C-46C7-B79F-D38E9221F8AA</string>
-		</dict>
-		<key>4880F969-08E9-4FD7-8702-B9101D9FC8B5</key>
+		<key>C3C2337C-E867-4BC4-B7D9-FF90FFD1E0FA</key>
 		<dict>
 			<key>from</key>
 			<string>7498C80E-B14E-4BAA-8F34-9CC2AD2BC539 - 7498C80E-B14E-4BAA-8F34-9CC2AD2BC539</string>
 			<key>to</key>
-			<string>DAC03B81-CDA3-425C-BE23-D9FAE534C541 - DAC03B81-CDA3-425C-BE23-D9FAE534C541</string>
+			<string>B55BB6AB-875C-46C7-B79F-D38E9221F8AA - B55BB6AB-875C-46C7-B79F-D38E9221F8AA</string>
 		</dict>
 	</dict>
 	<key>workflowMetaData</key>
