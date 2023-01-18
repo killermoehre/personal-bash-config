@@ -1,0 +1,3 @@
+[submodule ".local/share/nvim/site/vim-plug"]
+	path = .local/share/nvim/site/vim-plug
+	url = https://github.com/junegunn/vim-plug.git
