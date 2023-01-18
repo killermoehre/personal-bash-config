@@ -1,0 +1,20 @@
+require('mason-tool-installer').setup {
+    ensure_installed = {
+        'bash-language-server',
+        'black',
+        'flake8',
+        'lua-language-server',
+        'luacheck',
+        'markdownlint',
+        'mypy',
+        'python-lsp-server',
+        'shellcheck',
+        'shfmt',
+        'vim-language-server',
+        'yaml-language-server',
+        'yamlfmt',
+        'yamllint',
+    },
+    auto_update = true,
+    run_on_start = true,
+}

@@ -10,4 +10,4 @@ if hash nvim &> /dev/null; then
     _vim='nvim'
 fi
 
-exec "$_vim" -f -R '+PlugUpdate' '+PlugClean!' '+PlugUpdate' '+qall' 
+exec "$_vim" --headless -c 'autocmd User PackerComplete quitall' -c 'PackerSync'
