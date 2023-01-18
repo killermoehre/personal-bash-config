@@ -5,7 +5,7 @@
 	signingKey = 0xF023C3F1CA7D681A
 
 [core]
-    editor = mvim -f
+    editor = vimr --wait --nvim
 
 [credential]
     helper = osxkeychain

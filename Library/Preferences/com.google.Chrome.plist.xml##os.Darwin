@@ -37,7 +37,7 @@
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{800, 448}</string>
 	<key>NSWindow Frame NSNavPanelAutosaveName</key>
-	<string>-29 33 357 167 0 0 1920 1080 </string>
+	<string>741 457 438 167 0 0 1920 1080 </string>
 	<key>PurgeStaleScreenCapturePermissionSuccessEarly2022Attempts</key>
 	<integer>1</integer>
 	<key>PurgeStaleScreenCapturePermissionSuccessEarly2022Success</key>

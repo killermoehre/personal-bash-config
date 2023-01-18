@@ -8,14 +8,14 @@
 	<real>128</real>
 	<key>last-analytics-stamp</key>
 	<array>
-		<real>687631767.67197394</real>
+		<real>695642305.89016497</real>
 	</array>
 	<key>lastShowIndicatorTime</key>
 	<real>685215182.80172801</real>
 	<key>launchanim</key>
 	<false/>
 	<key>loc</key>
-	<string>de_DE:DE</string>
+	<string>de_DE:(null)</string>
 	<key>magnification</key>
 	<false/>
 	<key>mineffect</key>
@@ -23,7 +23,7 @@
 	<key>minimize-to-application</key>
 	<false/>
 	<key>mod-count</key>
-	<integer>49</integer>
+	<integer>54</integer>
 	<key>orientation</key>
 	<string>left</string>
 	<key>persistent-apps</key>
@@ -39,11 +39,11 @@
 				AAAAAAAAAAAAAAAAAAAAUAEAAAQAAAADAwAAAAAAIAwA
 				AAABAQAAQXBwbGljYXRpb25zDgAAAAEBAABQcml2aWxl
 				Z2VzLmFwcAAACAAAAAEGAAAQAAAAJAAAAAgAAAAEAwAA
-				NwXSAQAAAAAIAAAABAMAAAAjAQAAAAAACAAAAAEGAABM
+				g6mLAgAAAAAIAAAABAMAAA4pmwIAAAAACAAAAAEGAABM
 				AAAAXAAAAAgAAAAABAAAQcMOOuuAAAAYAAAAAQIAAAIA
 				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAABCQAAZmls
 				ZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAA
-				AFChG3MAAAAIAAAAAAQAAEHEWw/9gAAAJAAAAAEBAAAx
+				AFChG3MAAAAIAAAAAAQAAEHEnQ18AAAAJAAAAAEBAAAx
 				MzRDOURBQi0wOTY2LTRGNEEtQkMzNS02RDA4RjI3MzVG
 				ODIYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAA
 				AAEAAAABAQAALwAAAAAAAAABBQAAqAAAAP7///8BAAAA
@@ -67,13 +67,13 @@
 				<key>file-label</key>
 				<string>Privileges</string>
 				<key>file-mod-date</key>
-				<integer>17132060386996</integer>
+				<integer>23106385361808</integer>
 				<key>file-type</key>
 				<integer>41</integer>
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>198057575523460</integer>
+				<integer>128453343646868</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>

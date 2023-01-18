@@ -2,5 +2,5 @@
 if test -f /proc/version; then
     alias vim='nvim'
 else
-    alias vim='mvim'
+    alias vim='vimr'
 fi
