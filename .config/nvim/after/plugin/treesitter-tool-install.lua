@@ -1,11 +1,14 @@
 require'nvim-treesitter.configs'.setup {
     ensure_installed = {
         "bash",
+        "comment",
+        "diff",
         "git_rebase",
         "gitattributes",
         "gitcommit",
         "gitignore",
         "help",
+        "jq",
         "lua",
         "markdown",
         "python",
