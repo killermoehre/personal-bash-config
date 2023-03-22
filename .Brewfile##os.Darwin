@@ -47,7 +47,7 @@ brew "podman"
 brew "postgresql@14"
 brew "pre-commit"
 brew "pstree"
-brew "python@3.9", link: true
+brew "python@3.11", link: true
 brew "raggi/ale/openssl-osx-ca"
 brew "ripgrep-all"
 brew "sapcc/limesctl/limesctl"
