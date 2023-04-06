@@ -1,0 +1,4 @@
+#!/bin/bash
+
+CONFIG_PATH="${XDG_CONFIG_HOME:-$HOME/.config}/zulip/zuliprc"
+exec ../../.virtualenvs/zulip-term/bin/zulip-term -c "$CONFIG_PATH"
