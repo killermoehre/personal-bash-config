@@ -72,7 +72,7 @@ cask "libreoffice"
 cask "meld"
 cask "rowanj-gitx"
 cask "softmaker-freeoffice"
-cask "vimr"
+#cask "vimr"
 mas "Slack", id: 803453959
 tap "homebrew/bundle"
 tap "homebrew/cask"

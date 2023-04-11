@@ -10,7 +10,7 @@
 	<real>128</real>
 	<key>last-analytics-stamp</key>
 	<array>
-		<real>700997139.872293</real>
+		<real>702915868.67206502</real>
 	</array>
 	<key>lastShowIndicatorTime</key>
 	<real>685215182.80172801</real>
@@ -25,7 +25,7 @@
 	<key>minimize-to-application</key>
 	<false/>
 	<key>mod-count</key>
-	<integer>71</integer>
+	<integer>75</integer>
 	<key>orientation</key>
 	<string>left</string>
 	<key>persistent-apps</key>
@@ -41,11 +41,11 @@
 				AAAAAAAAAAAAAAAAAAAAUAEAAAQAAAADAwAAAAAAIAwA
 				AAABAQAAQXBwbGljYXRpb25zDgAAAAEBAABQcml2aWxl
 				Z2VzLmFwcAAACAAAAAEGAAAQAAAAJAAAAAgAAAAEAwAA
-				cp8WAwAAAAAIAAAABAMAAA4pmwIAAAAACAAAAAEGAABM
+				HayBAwAAAAAIAAAABAMAAA4pmwIAAAAACAAAAAEGAABM
 				AAAAXAAAAAgAAAAABAAAQcMOOuuAAAAYAAAAAQIAAAIA
 				AAAAAAAADwAAAAAAAAAAAAAAAAAAAAgAAAABCQAAZmls
 				ZTovLy8MAAAAAQEAAE1hY2ludG9zaCBIRAgAAAAEAwAA
-				AFChG3MAAAAIAAAAAAQAAEHEynt0gAAAJAAAAAEBAAAx
+				AFChG3MAAAAIAAAAAAQAAEHE7Eu9AAAAJAAAAAEBAAAx
 				MzRDOURBQi0wOTY2LTRGNEEtQkMzNS02RDA4RjI3MzVG
 				ODIYAAAAAQIAAIEAAAABAAAA7xMAAAEAAAAAAAAAAAAA
 				AAEAAAABAQAALwAAAAAAAAABBQAAqAAAAP7///8BAAAA
@@ -75,7 +75,7 @@
 				<key>is-beta</key>
 				<false/>
 				<key>parent-mod-date</key>
-				<integer>174061606187515</integer>
+				<integer>249227831353545</integer>
 			</dict>
 			<key>tile-type</key>
 			<string>file-tile</string>
