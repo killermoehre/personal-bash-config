@@ -1,5 +1,6 @@
 pip
 wheel
+gnureadline
 python-openstackclient
 python-cinderclient
 python-designateclient
