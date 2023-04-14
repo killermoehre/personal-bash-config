@@ -1,0 +1,11 @@
+#!/hint/bash
+
+if [[ "$(uname -o)" != "Android" ]]; then
+    exit 0
+fi
+
+pkg update
+pkg upgrade
+
+pkg update
+pkg install clang
