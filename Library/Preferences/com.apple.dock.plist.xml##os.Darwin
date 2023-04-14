@@ -10,7 +10,7 @@
 	<real>128</real>
 	<key>last-analytics-stamp</key>
 	<array>
-		<real>703068121.66356206</real>
+		<real>703180692.53229201</real>
 	</array>
 	<key>lastShowIndicatorTime</key>
 	<real>685215182.80172801</real>
@@ -25,7 +25,7 @@
 	<key>minimize-to-application</key>
 	<false/>
 	<key>mod-count</key>
-	<integer>77</integer>
+	<integer>78</integer>
 	<key>orientation</key>
 	<string>left</string>
 	<key>persistent-apps</key>

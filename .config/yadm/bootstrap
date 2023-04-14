@@ -5,7 +5,12 @@ set -euo pipefail
 declare -x SSH_AUTH_SOCK=''
 declare _exec_dir="${0}.d"
 export PATH="/opt/homebrew/bin:/usr/local/bin:/usr/sbin:/sbin:$PATH"
-SSH_AUTH_SOCK="$(gpgconf -L agent-ssh-socket)"
+if test -v TERMUX_VERSION; then
+    # on Android, OpenKeyChain is used for GPG stuff
+    eval "$(okc-ssh-agent)"
+else
+    SSH_AUTH_SOCK="$(gpgconf -L agent-ssh-socket)"
+fi
 
 declare _file=""
 printf 'Running %s\n' "$0"
