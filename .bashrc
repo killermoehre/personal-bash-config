@@ -14,7 +14,7 @@ function debug_echo() {
 
 declare -a _paths=''
 
-for _path in "$HOME/.local/bin" /opt/homebrew/opt/mysql-client/bin /opt/homebrew/bin /opt/homebrew/sbin; do
+for _path in "$HOME/.local/bin" /opt/homebrew/{opt/mysql-client/bin,bin,sbin} /data/data/com.termux/files/{usr/sbin,usr/bin,sbin,bin}; do
     test -d "$_path" && _paths+=("$_path")
 done
 
