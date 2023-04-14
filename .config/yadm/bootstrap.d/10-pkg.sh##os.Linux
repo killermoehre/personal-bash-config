@@ -8,4 +8,4 @@ pkg update
 pkg upgrade
 
 pkg update
-pkg install clang
+pkg install clang exa nodejs ripgrep termux-exec
