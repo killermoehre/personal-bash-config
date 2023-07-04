@@ -5,7 +5,7 @@
 	signingKey = 0x663429403340EF5C
 
 [core]
-    editor = nvim
+    editor = codium -w
 
 [credential "https://github.com"]
     helper = 
