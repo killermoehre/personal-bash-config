@@ -7,5 +7,9 @@
 [core]
     editor = nvim
 
-[credential]
-    helper = /usr/lib/git-core/git-credential-libsecret
+[credential "https://github.com"]
+    helper = 
+    helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+    helper = 
+    helper = !/usr/bin/gh auth git-credential

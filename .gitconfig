@@ -71,3 +71,12 @@
 [mergetool "meld"]
     trustExitCode = true
     useAutoMerge = auto
+[credential "https://github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://gist.github.com"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential
+[credential "https://github.tools.sap"]
+	helper = 
+	helper = !/usr/bin/gh auth git-credential

@@ -1,7 +1,0 @@
-pip
-wheel
-git+https://github.wdf.sap.corp/tg17/hammer.git#egg=hammer
-git+https://github.wdf.sap.corp/tg17/hammer-ext-volumechecker.git#egg=hammer-ext-volumechecker
-git+https://github.wdf.sap.corp/d042639/hammer-ext-volumetools.git#egg=hammer-ext-volumetools
-git+https://github.wdf.sap.corp/d042639/hammer-ext-shovel.git#egg=hammer-ext-shovel
-git+https://github.wdf.sap.corp/I530566/hammer-ext-cinder.git#egg=hammer-ext-cinder
