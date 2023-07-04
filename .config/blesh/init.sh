@@ -1,5 +1,5 @@
 # -*- mode: sh; mode: sh-bash -*-
-
+# shellcheck shell=bash
 ## This is a template for "~/.blerc".
 ##
 ## To use ble.sh in bash, please set up "~/.bashrc" as follows:
@@ -998,7 +998,7 @@ blehook/eval-after-load keymap_emacs blerc/emacs-load-hook
 ## Settings for Vim mode
 
 function blerc/vim-load-hook {
-  ((_ble_bash>=40300)) && builtin bind 'set keyseq-timeout 1'
+  ((${_ble_bash:?}>=40300)) && builtin bind 'set keyseq-timeout 1'
 
   #----------------------------------------------------------------------------
   # Settings for the mode indicator
