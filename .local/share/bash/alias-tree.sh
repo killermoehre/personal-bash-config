@@ -1,2 +1,4 @@
-#!/bash
-alias tree='exa --tree --color=auto --icons '
+#!/hint/bash
+if type -p exa; then
+    alias tree='exa --tree --color=auto --icons '
+fi
