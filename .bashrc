@@ -17,7 +17,7 @@ if test -x "$(command -v tmux)" \
     && [[ ! "$TERM" =~ screen ]] \
     && [[ ! "$TERM" =~ tmux ]] \
     && test ! -v TMUX; then
-    exec tmux
+    exec tmux -2 new-session -A -s main  # attach to main session, if it exists, else create it.
 fi
 
 declare -a _paths=''
