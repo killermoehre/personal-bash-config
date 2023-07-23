@@ -77,6 +77,6 @@
 [credential "https://gist.github.com"]
 	helper = 
 	helper = !/usr/bin/gh auth git-credential
-[credential "https://github.tools.sap"]
+[credential "https://git.intern.b1-systems.de"]
 	helper = 
-	helper = !/usr/bin/gh auth git-credential
+	helper = !/usr/bin/glab auth git-credential
