@@ -183,8 +183,15 @@ bleopt info_display=bottom
 ## line is not shown.  "prompt_status_align" controls the position of the
 ## content in the status line.
 
-#bleopt prompt_status_line="\u@\h: \w\r\r\t"
-bleopt prompt_status_align=$'justify=\r'
+# moved to tmux.conf
+#ble/util/idle.push 'ble/util/idle.sleep 1000'
+#function ble/prompt/backslash:killermoehre/time {
+#  ble/prompt/unit/add-hash '$SECONDS'
+#  ble/prompt/process-prompt-string '\t'
+#}
+#
+#bleopt prompt_status_line="\u@\h: \w\r\r\q{killermoehre/time}"
+#bleopt prompt_status_align=$'justify=\r'
 
 
 ## "prompt_eol_mark" specifies the contents of the mark used to indicate the

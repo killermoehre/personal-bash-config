@@ -38,11 +38,12 @@ ShortcutsNoMnemonics=TRUE
 ShortcutsNoHelpkey=TRUE
 ShortcutsNoMenukey=TRUE
 BackgroundMode=TERMINAL_BACKGROUND_TRANSPARENT
-BackgroundDarkness=0.800000
+BackgroundDarkness=0,800000
 ColorForeground=#839496
 ColorBackground=#002b36
 ColorCursor=#93a1a1
 ColorBold=#93a1a1
 ColorBoldUseDefault=FALSE
-TabActivityColor=#dc322f
+TabActivityColor=#838394949696
+DropdownAlwaysShowTabs=FALSE
 

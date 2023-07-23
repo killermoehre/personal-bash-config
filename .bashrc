@@ -12,6 +12,14 @@ function debug_echo() {
     fi
 }
 
+if test -x "$(command -v tmux)" \
+    && test -v PS1 \
+    && [[ ! "$TERM" =~ screen ]] \
+    && [[ ! "$TERM" =~ tmux ]] \
+    && test ! -v TMUX; then
+    exec tmux
+fi
+
 declare -a _paths=''
 
 for _path in "/usr/bin" "$HOME/.local/bin"; do
