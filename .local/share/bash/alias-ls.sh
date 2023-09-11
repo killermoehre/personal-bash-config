@@ -1,4 +1,4 @@
 #!/hint/bash
-if type -p exa &> /dev/null; then
-    alias ls='exa --colour=auto --icons '
+if type -p eza &> /dev/null; then
+    alias ls='eza --colour=auto --icons '
 fi
