@@ -1,2 +1,2 @@
 #!/hint/bash
-declare -x EDITOR='codium -w'
+declare -x EDITOR='codium -w -n'

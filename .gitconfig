@@ -80,3 +80,9 @@
 [credential "https://git.intern.b1-systems.de"]
 	helper = 
 	helper = !/usr/bin/glab auth git-credential
+[credential "https://git.vip-lab.infra.il.thlrz.de"]
+	helper = 
+	helper = !/usr/bin/glab auth git-credential
+[credential]
+	helper = -l
+	help = -l

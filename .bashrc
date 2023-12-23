@@ -22,7 +22,7 @@ fi
 
 declare -a _paths=''
 
-for _path in "/usr/bin" "$HOME/.local/bin"; do
+for _path in "/usr/local/bin" "/usr/bin" "/usr/bin/core_perl" "$HOME/.local/bin"; do
     test -d "$_path" && _paths+=("$_path")
 done
 
