@@ -12,12 +12,9 @@ function debug_echo() {
     fi
 }
 
-if test -x "$(command -v tmux)" \
-    && test -v PS1 \
-    && [[ ! "$TERM" =~ screen ]] \
-    && [[ ! "$TERM" =~ tmux ]] \
-    && test ! -v TMUX; then
-    exec tmux -2 new-session -A -s main  # attach to main session, if it exists, else create it.
+if [[ -x $(type -p tmux) &&  ! -v TMUX ]]; then
+    systemctl --user start tmux@main.service
+    exec tmux -S "${XDG_RUNTIME_DIR}/tmux-${UID}/main" new-session -A -s default
 fi
 
 declare -a _paths=''

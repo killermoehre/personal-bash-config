@@ -1,0 +1,11 @@
+[Unit]
+Description=tmux session %I
+
+[Service]
+RuntimeDirectory=tmux-%U
+RuntimeDirectoryMode=0700
+Environment=TMUX_TMPDIR=%t
+ExecStart=/usr/bin/tmux -v -D -L "%I"
+
+[Install]
+WantedBy=default.target
